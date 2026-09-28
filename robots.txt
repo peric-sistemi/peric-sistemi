@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-# Add your canonical website URL to sitemap.xml after the domain is finalized.
