@@ -1059,3 +1059,46 @@ bottom:18px;
 .lead{font-size:19px!important}
 .feature-grid,.process-grid,.check-list,.quick-grid{grid-template-columns:1fr}
 }
+
+
+/* ===========================
+   V2 NAVIGATION & UX
+=========================== */
+.skip-link{position:fixed;left:12px;top:-60px;z-index:10000;background:#ff7a00;color:#fff;padding:12px 18px;border-radius:8px;font-weight:700}
+.skip-link:focus{top:12px}
+.nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);border-radius:10px;width:46px;height:42px;padding:9px;cursor:pointer}
+.nav-toggle span{display:block;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+.breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:0 0 28px;color:#9299a5;font-size:14px}
+.breadcrumbs a{color:#cfd4dc}
+.breadcrumbs a:hover{color:#ff7a00}
+.breadcrumbs span:last-child{color:#fff}
+.process-section{padding:105px 0;background:#111827}
+.process-grid{margin-top:45px}
+.process-grid>div{transition:.3s}
+.process-grid>div:hover{transform:translateY(-5px);border-color:#ff7a00}
+.knowledge{padding:105px 0;background:#0d1117}
+.knowledge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.knowledge-grid a{display:flex;flex-direction:column;gap:10px;background:#151d28;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:26px;color:#fff;transition:.3s}
+.knowledge-grid a:hover{transform:translateY(-5px);border-color:#ff7a00}
+.knowledge-grid strong{font-size:19px}
+.knowledge-grid span{color:#bfc5ce;font-size:15px}
+.gallery .item{aspect-ratio:4/3}
+.gallery img{height:100%}
+.service,.brand,.box,.item,.why-grid div{will-change:transform}
+@media(max-width:900px){.knowledge-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+header .container{flex-direction:row;gap:14px;position:relative}
+header .logo{margin-right:auto}
+header .header-buttons{display:none}
+.nav-toggle{display:block;order:3}
+nav#main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:rgba(9,12,16,.98);border-top:1px solid rgba(255,255,255,.08);padding:18px 5% 22px}
+nav#main-nav.mobile-open{display:block}
+nav#main-nav ul{flex-direction:column;align-items:stretch;gap:0}
+nav#main-nav li a{display:block;padding:13px 8px;border-bottom:1px solid rgba(255,255,255,.06);text-align:center}
+.logo img{height:54px}
+.knowledge-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{transition:none!important;animation:none!important}
+}
