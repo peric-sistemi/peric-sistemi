@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://peric-sistemi.github.io/peric-sistemi/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://peric-sistemi.github.io/peric-sistemi/usluge.html</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://peric-sistemi.github.io/peric-sistemi/galerija.html</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://peric-sistemi.github.io/peric-sistemi/galerija.html</loc><lastmod>2026-09-28</lastmod>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/gallery1.jpg</image:loc><image:title>Ugradnja motora za kliznu kapiju – Perić Sistemi</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/gallery2.jpg</image:loc><image:title>Automatika za kapiju – Perić Sistemi</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/gallery3.jpg</image:loc><image:title>Motor za kliznu kapiju – profesionalna montaža</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/gallery4.jpg</image:loc><image:title>Motor za dvokrilnu kapiju – ugradnja</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/gallery5.jpg</image:loc><image:title>Detalj instalacije automatike za kapiju</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/gallery6.jpg</image:loc><image:title>Perić Sistemi – automatika i elektroinstalacije</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/audio-interfon-videx-ugradnja-kapija-peric-sistemi.webp</image:loc><image:title>Ugradnja audio interfona Videx na kapiji</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/zavarivanje-sine-klizne-kapije-ugradnja-automatike-peric-sistemi.webp</image:loc><image:title>Priprema i zavarivanje elemenata klizne kapije</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/motor-za-kliznu-kapiju-ugradnja-peric-sistemi.webp</image:loc><image:title>Motor za kliznu kapiju – ugradnja</image:title></image:image>
+    <image:image><image:loc>https://peric-sistemi.github.io/peric-sistemi/images/nice-motor-za-kliznu-kapiju-montaza-peric-sistemi.webp</image:loc><image:title>Nice motor za kliznu kapiju – montaža</image:title></image:image>
+  </url>
   <url><loc>https://peric-sistemi.github.io/peric-sistemi/kontakt.html</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://peric-sistemi.github.io/peric-sistemi/ugradnja-motora-za-kapije.html</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://peric-sistemi.github.io/peric-sistemi/motori-za-klizne-kapije.html</loc><lastmod>2026-09-28</lastmod></url>
