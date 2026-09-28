@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://peric-sistemi.github.io/peric-sistemi/sitemap.xml
