@@ -47,6 +47,40 @@
 }
 </script>
 
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"ItemList",
+ "name":"Izabrana oprema za automatizaciju kapija i prilaza – Perić Sistemi",
+ "itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Nice Robus RB400"},
+  {"@type":"ListItem","position":2,"name":"Nice Robus RB600"},
+  {"@type":"ListItem","position":3,"name":"FAAC C721"},
+  {"@type":"ListItem","position":4,"name":"FAAC 740"},
+  {"@type":"ListItem","position":5,"name":"FAAC 741"},
+  {"@type":"ListItem","position":6,"name":"FAAC 844 ER"},
+  {"@type":"ListItem","position":7,"name":"Nice Toona TO4024"},
+  {"@type":"ListItem","position":8,"name":"FAAC 400 CBAC"},
+  {"@type":"ListItem","position":9,"name":"FAAC D600"},
+  {"@type":"ListItem","position":10,"name":"FAAC D1000"},
+  {"@type":"ListItem","position":11,"name":"FAAC B680H"},
+  {"@type":"ListItem","position":12,"name":"Cardin SLX624CB"},
+  {"@type":"ListItem","position":13,"name":"Key Automation SUN5024"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"Kako se bira motor za kapiju?","acceptedAnswer":{"@type":"Answer","text":"Motor se bira prema tipu kapije, masi i dužini krila, stanju mehanike, nagibu, vetrovnom opterećenju, intenzitetu korišćenja i zahtevima bezbednosti. Masa sama nije dovoljna za pravilan izbor."}},
+  {"@type":"Question","name":"Da li Perić Sistemi ugrađuje automatiku širom Srbije?","acceptedAnswer":{"@type":"Answer","text":"Perić Sistemi pruža ugradnju i servis automatike za kapije, rampe, garažna vrata i prateće opreme širom Srbije."}},
+  {"@type":"Question","name":"Da li su tehnički podaci na stranici proizvođački?","acceptedAnswer":{"@type":"Answer","text":"Tehnički podaci se navode prema dostupnoj dokumentaciji proizvođača i distributera. Za konkretnu instalaciju konačan izbor se proverava prema tačnoj oznaci modela i aktuelnoj tehničkoj dokumentaciji."}}
+ ]
+}
+</script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,6 +103,22 @@
 .note{font-size:.9rem;opacity:.8}
 .scope-box{margin-top:30px;padding:20px 22px;border-left:4px solid #f28c28;background:#f7f7f7;border-radius:10px}
 @media(max-width:768px){.catalog-grid{grid-template-columns:1fr}.catalog-card{padding:20px}}
+
+.product-photo{display:block;width:100%;max-width:280px;height:180px;object-fit:contain;margin:0 auto 16px;border-radius:10px;background:#fafafa}
+.product-photo-label{text-align:center;font-size:.76rem;opacity:.7;margin:-8px 0 12px}
+.catalog-trust{margin-top:40px;padding:28px;border:1px solid #e7e7e7;border-radius:16px;background:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
+.trust-grid div,.docs-grid a{padding:16px;border:1px solid #e7e7e7;border-radius:12px;background:#fafafa}
+.trust-grid strong{display:block;margin-bottom:5px}
+.trust-grid span,.docs-grid span{display:block;font-size:.88rem;line-height:1.5}
+.documentation-section{margin-top:42px}
+.docs-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+.docs-grid a{display:block;text-decoration:none;color:inherit}
+.docs-grid a:hover{border-color:#f28c28}
+.docs-grid strong{display:block;margin-bottom:5px}
+.documentation-note{font-size:.9rem;opacity:.8;margin-top:16px}
+@media(max-width:900px){.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.trust-grid,.docs-grid{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -111,24 +161,35 @@
 <strong>Ne nudimo u okviru ove ponude:</strong> potapajuće stubiće, RISCO alarmne sisteme i video-interfone.
 </div>
 
+
+<section class="catalog-trust" aria-labelledby="kako-biramo">
+<h2 id="kako-biramo">Kako biramo automatiku za kapiju</h2>
+<p>Ne biramo motor samo prema kilogramima. Za pravilno dimenzionisanje proveravamo tip kapije, dužinu i masu krila, stanje šarki ili klizne mehanike, nagib, trenje, vetrovno opterećenje, broj ciklusa, potreban nivo bezbednosti i kompatibilnost fotoćelija, daljinskih upravljača i centrale.</p>
+<div class="trust-grid">
+<div><strong>1. Pregled objekta</strong><span>Kapija, mehanika, prostor za motor i napajanje.</span></div>
+<div><strong>2. Dimenzionisanje</strong><span>Masa, dužina, intenzitet rada i uslovi korišćenja.</span></div>
+<div><strong>3. Bezbednost</strong><span>Fotoćelije, signalizacija i zaštitne funkcije prema sistemu.</span></div>
+<div><strong>4. Ugradnja i podešavanje</strong><span>Montaža, programiranje, testiranje i predaja sistema korisniku.</span></div>
+</div>
+</section>
 <div class="catalog-grid">
 
 <div class="catalog-card">
 <h2>Motori za klizne kapije</h2>
 <div class="brand-row"><span class="brand-tag">Nice</span><span class="brand-tag">FAAC</span><span class="brand-tag">Cardin</span><span class="brand-tag">Key Automation</span></div>
 <ul class="model-list">
-<li><strong>Nice Robus RB400</strong><span class="spec">24 V DC · do 400 kg · do 7 m · integrisana kontrolna jedinica · Nice BlueBUS.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-za-kliznu-kapiju-do-400kg-robus" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>Nice Robus RB600</strong><span class="spec">24 V DC · do 600 kg · integrisana elektronika · elektromehanički granični prekidač · BlueBUS · do 7 pari uređaja preko 2 provodnika.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-klizna-kapija-600kg-robus" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC C721</strong><span class="spec">24 V · do 800 kg · maksimalna brzina do 18 m/min · magnetni granični prekidač · elektronska zaštita od gnječenja i enkoder.</span><a class="product-link" href="https://stilmatik.rs/proizvod/niskonaponski-motor-klizna-kapija-800kg-c721" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 740</strong><span class="spec">220–240 V · do 500 kg · do 12 m/min · 30% učestalost upotrebe · integrisana 740D elektronika · IP44.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-740.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 741</strong><span class="spec">220–240 V · do 900 kg · do 12 m/min · 40% učestalost upotrebe · integrisana 740D elektronika · IP44.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-741.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 746 ER</strong><span class="spec">220–240 V · do 400–600 kg, zavisno od konfiguracije zupčanika · do 9,6–12 m/min · 70% učestalost upotrebe.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-746er.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 844 ER</strong><span class="spec">230 V · do 1.800 kg · do 50 m sa Z20 / 40 m sa Z16 · 70% radni ciklus · 650 W · IP zaštita i konfiguracija prema izvedbi.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-klizne-kapije-industrijska-upotreba-1800kg-844" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 844 MC 3PH</strong><span class="spec">220–240 / 380–415 V, trofazni · do 3.500 kg · do 42 m · IP55 · 850 W · 100% do 2.000 kg, 50% preko 2.000 kg.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-844mc3ph.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><img class="product-photo" src="https://pim.niceforyou.com//NicePIM/Products/RBS400/5278/image-thumb__5278__nice-product-500/Principal_RBS400.e9aa5485.png" alt="Nice Robus RBS400 – originalna fotografija proizvođača" loading="lazy"><div class="product-photo-label">Originalna fotografija: Nice</div><strong>Nice Robus RB400</strong><span class="spec">230 V AC napajanje · do 400 kg · maksimalna dužina krila 8 m · maksimalna brzina 0,34 m/s · 250 W · IP44 · 35 ciklusa/h za krilo do 4 m · integrisana centrala · BlueBUS.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-za-kliznu-kapiju-do-400kg-robus" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><img class="product-photo" src="https://pim.niceforyou.com//NicePIM/Products/RBS600/5281/image-thumb__5281__nice-product-500/Principal_RBS600.e9aa5485.png" alt="Nice Robus RBS600 – originalna fotografija proizvođača" loading="lazy"><div class="product-photo-label">Originalna fotografija: Nice</div><strong>Nice Robus RB600</strong><span class="spec">230 V AC napajanje · do 600 kg · maksimalna dužina krila 8 m · maksimalna brzina 0,34 m/s · 450 W · IP44 · 40 ciklusa/h za krilo do 4 m · integrisana centrala · BlueBUS.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-klizna-kapija-600kg-robus" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><img class="product-photo" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.BIZ/FAAC_Sliding_Gates_Automations_Slider_Products_C721.jpeg?height=210&name=FAAC_Sliding_Gates_Automations_Slider_Products_C721.jpeg&width=300" alt="FAAC C721 – originalna fotografija proizvođača" loading="lazy"><div class="product-photo-label">Originalna fotografija: FAAC</div><strong>FAAC C721</strong><span class="spec">24 V · do 800 kg · maksimalna brzina do 18 m/min · magnetni granični prekidač · elektronska zaštita od gnječenja i enkoder.</span><a class="product-link" href="https://stilmatik.rs/proizvod/niskonaponski-motor-klizna-kapija-800kg-c721" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><strong>FAAC 740</strong><span class="spec">220–240 V · do 500 kg · do 12 m/min · 30% učestalost upotrebe · integrisana 740D elektronika · IP44.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-740.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC 741</strong><span class="spec">220–240 V · do 900 kg · do 12 m/min · 40% učestalost upotrebe · integrisana 740D elektronika · IP44.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-741.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC 746 ER</strong><span class="spec">220–240 V · do 400–600 kg, zavisno od konfiguracije zupčanika · do 9,6–12 m/min · 70% učestalost upotrebe.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-746er.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC 844 ER</strong><span class="spec">230 V · do 1.800 kg · do 50 m sa Z20 / 40 m sa Z16 · 70% radni ciklus · 650 W · IP zaštita i konfiguracija prema izvedbi.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-klizne-kapije-industrijska-upotreba-1800kg-844" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC 844 MC 3PH</strong><span class="spec">220–240 / 380–415 V, trofazni · do 3.500 kg · do 42 m · IP55 · 850 W · 100% do 2.000 kg, 50% preko 2.000 kg.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-faac-844mc3ph.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
 <li><strong>Key Automation TURBO S 600KG</strong><span class="spec">24 V porodica pogona za klizne kapije; konkretna nosivost i izvedba proveravaju se prema izabranoj varijanti.</span></li>
-<li><strong>Key Automation SUN 5024</strong><span class="spec">24 V DC · do 500 kg · integrisana 14A kontrolna jedinica · električno kočenje i granični prekidači · opciono Bluetooth/KUBE.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-za-kliznu-kapiju-do-500kg-24v" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>Cardin SLX624CB</strong><span class="spec">24 V DC · do 600 kg · 13 m/min · magnetni enkoder · integrisan 433 MHz FM prijemnik · Bluetooth · LCD 128×128 px · IP44.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-klizna-kapija-600kg-bluetooth-slx624cb" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>Cardin SL524CB</strong><span class="spec">24 V DC serija · elektronski programator · 433 MHz FM prijemnik · punjač i NiMH baterije · LCD programator · automatsko ponovno zatvaranje.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-cardin-sl524cb.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><strong>Key Automation SUN 5024</strong><span class="spec">24 V DC · do 500 kg · integrisana 14A kontrolna jedinica · električno kočenje i granični prekidači · opciono Bluetooth/KUBE.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-za-kliznu-kapiju-do-500kg-24v" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://keyautomation.com/en/products/gate/scorrevoli/slide/sun50/24v/900sun5024" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>Cardin SLX624CB</strong><span class="spec">24 V DC · do 600 kg · 13 m/min · magnetni enkoder · integrisan 433 MHz FM prijemnik · Bluetooth · LCD 128×128 px · IP44.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-klizna-kapija-600kg-bluetooth-slx624cb" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.cardin.it/it/assistenza/documentazione-tecnica" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>Cardin SL524CB</strong><span class="spec">24 V DC serija · elektronski programator · 433 MHz FM prijemnik · punjač i NiMH baterije · LCD programator · automatsko ponovno zatvaranje.</span><a class="product-link" href="https://www.stilmatik.rs/motori-kapije-cardin-sl524cb.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.cardin.it/it/assistenza/documentazione-tecnica" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
 </ul>
 <p class="note">Napomena: kod kliznih kapija masa nije jedini kriterijum. Proveravaju se dužina, stanje mehanike, nagib, zupčasta letva, intenzitet rada i konkretna verzija pogona.</p>
 </div>
@@ -137,10 +198,10 @@
 <h2>Motori za krilne kapije</h2>
 <div class="brand-row"><span class="brand-tag">Nice</span><span class="brand-tag">FAAC</span><span class="brand-tag">Key Automation</span></div>
 <ul class="model-list">
-<li><strong>Nice Toona TO4024</strong><span class="spec">24 V DC · do 3 m po krilu · magnetni enkoder · mehanički graničnik pri otvaranju · BlueBUS.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-za-krilnu-kapiju-do-3m-toona" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>Nice Toona TO5024</strong><span class="spec">24 V DC · do 5 m po krilu · magnetni enkoder · dvostruka detekcija prepreke · priključak za sigurnosne ivice 8,2 kΩ.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-za-krilnu-kapiju-do-5m-toona-5" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 400 CBAC</strong><span class="spec">hidraulični linearni pogon · hidraulično zaključavanje u otvorenom i zatvorenom položaju · radna temperatura −20 do +55 °C · dostupne različite izvedbe.</span><a class="product-link" href="https://stilmatik.rs/proizvod/hidraulicni-motor-za-krilnu-kapiju-sa-zakljucavanjem" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 415 L</strong><span class="spec">linearni pogon · do 4 m ili 300 kg po krilu · hod klipa 400 mm · maksimalno otvaranje 110° · virtuelni enkoder sa reverzijom pri prepreci.</span><a class="product-link" href="https://stilmatik.rs/proizvod/linearni-motor-za-krilnu-kapiju-do-4m-24v-dc" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><strong>Nice Toona TO4024</strong><span class="spec">24 V DC · do 3 m po krilu · magnetni enkoder · mehanički graničnik pri otvaranju · BlueBUS.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-za-krilnu-kapiju-do-3m-toona" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.niceforyou.com/uk/professional-area/videos-faq/swing-gates/toona-24v" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>Nice Toona TO5024</strong><span class="spec">24 V DC · do 5 m po krilu · magnetni enkoder · dvostruka detekcija prepreke · priključak za sigurnosne ivice 8,2 kΩ.</span><a class="product-link" href="https://stilmatik.rs/proizvod/elektromehanicki-motor-za-krilnu-kapiju-do-5m-toona-5" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.niceforyou.com/uk/professional-area/videos-faq/swing-gates/toona-24v" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC 400 CBAC</strong><span class="spec">hidraulični linearni pogon · hidraulično zaključavanje u otvorenom i zatvorenom položaju · radna temperatura −20 do +55 °C · dostupne različite izvedbe.</span><a class="product-link" href="https://stilmatik.rs/proizvod/hidraulicni-motor-za-krilnu-kapiju-sa-zakljucavanjem" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/products/400-hydraulic-operator-230v" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC 415 L</strong><span class="spec">linearni pogon · do 4 m ili 300 kg po krilu · hod klipa 400 mm · maksimalno otvaranje 110° · virtuelni enkoder sa reverzijom pri prepreci.</span><a class="product-link" href="https://stilmatik.rs/proizvod/linearni-motor-za-krilnu-kapiju-do-4m-24v-dc" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
 <li><strong>Key Automation STAR / Turbo S 400 24V</strong><span class="spec">24 V DC · do 3 m ili 400 kg po krilu prema konkretnoj izvedbi · integrisana kontrolna jedinica · podesivo usporavanje · integrisan radio prijemnik.</span><a class="product-link" href="https://stilmatik.rs/proizvod/turbo-s-motor-za-krilnu-kapiju-do-3m-400kg-po-krilu-sa-integrisanom-kontrolnom-jedinicom" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
 </ul>
 <p class="note">Kod krilnih kapija proveravaju se masa i dužina svakog krila, položaj šarki, geometrija, ugao otvaranja, vetrovno opterećenje i intenzitet korišćenja.</p>
@@ -150,9 +211,9 @@
 <h2>Automatske rampe</h2>
 <div class="brand-row"><span class="brand-tag">FAAC</span><span class="brand-tag">Cardin</span></div>
 <ul class="model-list">
-<li><strong>FAAC 615</strong><span class="spec">hidraulična rampa · krak 2–4 m · otvaranje oko 3,8 s · 50% radni ciklus · rezidencijalna i laka komercijalna upotreba.</span><a class="product-link" href="https://stilmatik.rs/proizvod/hidraulicna-rampa-za-krac-od-2-do-4m" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC 615 BPR</strong><span class="spec">220–240 V · maksimalni krak 5 m · otvaranje do 5,7 s · 50% učestalost upotrebe · hidraulični pogon · IP44.</span><a class="product-link" href="https://www.stilmatik.rs/rampe-faac-615bpr.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC B680H</strong><span class="spec">100–240 V AC · brushless 36 V motor · krak 2–8 m · otvaranje 1,5–6 s · 100% kontinuirani ciklus · do preko 2.000.000 ciklusa opruga · IP56.</span><a class="product-link" href="https://stilmatik.rs/proizvod/hibridna-automatska-rampa-8m-b680h" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><strong>FAAC 615</strong><span class="spec">hidraulična rampa · krak 2–4 m · otvaranje oko 3,8 s · 50% radni ciklus · rezidencijalna i laka komercijalna upotreba.</span><a class="product-link" href="https://stilmatik.rs/proizvod/hidraulicna-rampa-za-krac-od-2-do-4m" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC 615 BPR</strong><span class="spec">220–240 V · maksimalni krak 5 m · otvaranje do 5,7 s · 50% učestalost upotrebe · hidraulični pogon · IP44.</span><a class="product-link" href="https://www.stilmatik.rs/rampe-faac-615bpr.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC B680H</strong><span class="spec">100–240 V AC · brushless 36 V motor · krak 2–8 m · otvaranje 1,5–6 s · 100% kontinuirani ciklus · do preko 2.000.000 ciklusa opruga · IP56.</span><a class="product-link" href="https://stilmatik.rs/proizvod/hibridna-automatska-rampa-8m-b680h" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
 <li><strong>Cardin Barrier 6–8m</strong><span class="spec">24 V elektromehanička rampa · enkoderska kontrola · LED upozorenje · LCD programator · 433/868,3 MHz prijemni moduli prema izvedbi · kraci 6–8 m prema konfiguraciji.</span><a class="product-link" href="https://stilmatik.rs/proizvod.php?slug=elektromehanicka-rampa-8m-tamno-siva-cardin" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
 </ul>
 </div>
@@ -161,9 +222,9 @@
 <h2>Motori za garažna vrata</h2>
 <div class="brand-row"><span class="brand-tag">Nice</span><span class="brand-tag">FAAC</span></div>
 <ul class="model-list">
-<li><strong>Nice Spido 600</strong><span class="spec">sekciona vrata do 9,6 m² · podizna vrata do 10,5 m² · DC motor sa kontrolnom jedinicom · LCD programiranje · detekcija prepreke · brojač manevara.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-za-garazna-vrata-do-9-6m2-sekcijona-i-uspinjuca" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC D600</strong><span class="spec">za balansirana sekciona vrata u rezidencijalnoj upotrebi · integrisano osvetljenje · elektronska detekcija prepreke · automatsko ponovno otvaranje pri prepreci.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-za-sekcijona-garazna-vrata-rezidencijalna-upotreba" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
-<li><strong>FAAC D1000</strong><span class="spec">24 V elektromehanički motor · maksimalna sila 1.000 N · intenzivna upotreba · lančani ili kaišni pogon · maksimalna brzina otvaranja 6,6 m/min · 45 dBA prema Stilmatik podacima.</span><a class="product-link" href="https://www.stilmatik.rs/motori-garazna-vrata-faac-d1000.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a></li>
+<li><strong>Nice Spido 600</strong><span class="spec">sekciona vrata do 9,6 m² · podizna vrata do 10,5 m² · DC motor sa kontrolnom jedinicom · LCD programiranje · detekcija prepreke · brojač manevara.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-za-garazna-vrata-do-9-6m2-sekcijona-i-uspinjuca" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.niceforyou.com/rs/download?t=475&term=drive+600" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC D600</strong><span class="spec">za balansirana sekciona vrata u rezidencijalnoj upotrebi · integrisano osvetljenje · elektronska detekcija prepreke · automatsko ponovno otvaranje pri prepreci.</span><a class="product-link" href="https://stilmatik.rs/proizvod/motor-za-sekcijona-garazna-vrata-rezidencijalna-upotreba" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/products/d600-d700hs-d1000-electromechanical-operators-24v" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
+<li><strong>FAAC D1000</strong><span class="spec">24 V elektromehanički motor · maksimalna sila 1.000 N · intenzivna upotreba · lančani ili kaišni pogon · maksimalna brzina otvaranja 6,6 m/min · 45 dBA prema Stilmatik podacima.</span><a class="product-link" href="https://www.stilmatik.rs/motori-garazna-vrata-faac-d1000.html" target="_blank" rel="noopener">Originalni proizvodni podaci</a><a class="product-link" href="https://www.faac.biz/products/d600-d700hs-d1000-electromechanical-operators-24v" target="_blank" rel="noopener">Uputstvo / dokumentacija</a></li>
 </ul>
 </div>
 
@@ -211,6 +272,22 @@
 
 </div>
 
+
+<section class="documentation-section" aria-labelledby="dokumentacija">
+<h2 id="dokumentacija">Zvanična dokumentacija proizvođača</h2>
+<p>Za tehnički rad prednost imaju aktuelna uputstva i dokumentacija proizvođača. Linkovi vode na zvanične dokumentacione stranice ili zvanične produktne stranice kada je dokumentacija dostupna kroz njih.</p>
+<div class="docs-grid">
+<a href="https://www.niceforyou.com/en/professional-area/videos-faq/sliding-gates/robus" target="_blank" rel="noopener"><strong>Nice Robus RB400 / RB600</strong><span>Uputstva, quick guide i profesionalna podrška</span></a>
+<a href="https://www.niceforyou.com/uk/professional-area/videos-faq/swing-gates/toona-24v" target="_blank" rel="noopener"><strong>Nice Toona TO4024 / TO5024</strong><span>Uputstva i dodaci za Toona 24 V</span></a>
+<a href="https://www.niceforyou.com/rs/download?t=475&term=drive+600" target="_blank" rel="noopener"><strong>Nice Spido 600</strong><span>Zvanična dokumentacija i aktuelne verzije uputstava</span></a>
+<a href="https://www.faac.biz/support/manuals-and-certificates" target="_blank" rel="noopener"><strong>FAAC</strong><span>Zvanična baza uputstava, sertifikata i tehničke dokumentacije</span></a>
+<a href="https://keyautomation.com/en/products/gate/scorrevoli/slide/sun50/24v/900sun5024" target="_blank" rel="noopener"><strong>Key Automation SUN5024</strong><span>Zvanična produktna stranica sa Download sekcijom</span></a>
+<a href="https://keyautomation.com/media/products/images/MANUALS/580SUN3%20REV02.PDF" target="_blank" rel="noopener"><strong>Key Automation SUN</strong><span>Zvanično uputstvo za instalaciju i upotrebu</span></a>
+<a href="https://www.cardin.it/it/assistenza/documentazione-tecnica" target="_blank" rel="noopener"><strong>Cardin</strong><span>Zvanična tehnička dokumentacija</span></a>
+<a href="https://www.cardin.it/en/assistenza/cataloghi" target="_blank" rel="noopener"><strong>Cardin katalog</strong><span>Zvanični katalog proizvoda i brošure</span></a>
+</div>
+<p class="documentation-note"><strong>Važno:</strong> uputstvo se bira prema tačnoj oznaci, verziji elektronike i generaciji proizvoda. Kod starijih i novijih revizija dokumentacija može biti različita.</p>
+</section>
 <div class="cta-box" style="margin-top:45px">
 <h2>Ne znate koji model vam odgovara?</h2>
 <p>Pošaljite fotografiju kapije, približne dimenzije, masu ako je poznata i informaciju koliko se kapija koristi. Na osnovu toga možemo pripremiti početnu procenu i predložiti odgovarajući sistem.</p>
