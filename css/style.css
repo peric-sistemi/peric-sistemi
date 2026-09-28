@@ -979,9 +979,13 @@ height:60px;
 
 .hero{
 
-padding:140px 0 80px;
+padding:0;
 
-height:auto;
+height:calc(100vh - 90px);
+
+min-height:620px;
+
+overflow:hidden;
 
 }
 
