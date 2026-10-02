@@ -1,0 +1,11 @@
+{
+  "name": "Perić Sistemi – Automatika za kapije",
+  "short_name": "Perić Sistemi",
+  "lang": "sr-Latn",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Ugradnja i servis automatike za kapije i elektroinstalacije širom Srbije.",
+  "icons": [
+    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}
