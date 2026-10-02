@@ -1,0 +1,1 @@
+QA checklist: custom-domain canonical; one H1; descriptive title; concise meta description; Open Graph; favicon; alt text; breadcrumb; valid JSON-LD; internal links; sitemap inclusion; mobile-friendly layout; clear phone/WhatsApp CTA.
