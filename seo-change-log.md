@@ -1,0 +1,1 @@
+SEO workstream started 2026-10-02. The site is being hardened around technical SEO, commercial intent, manufacturer-verified technical content, local relevance, and real installation evidence.
