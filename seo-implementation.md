@@ -1,0 +1,1 @@
+Implementation principle: make substantive SEO changes to existing HTML only after retrieving the exact current blob SHA/content. Preserve existing design and content unless a change is deliberate.
