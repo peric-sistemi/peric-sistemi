@@ -1,0 +1,1 @@
+This repository uses pericsistemi.rs as the canonical public domain. SEO changes should preserve that canonical and avoid duplicate GitHub Pages URLs.

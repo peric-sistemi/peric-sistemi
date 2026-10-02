@@ -1,0 +1,1 @@
+SEO deployment branch contains supporting documentation and a favicon asset. Core HTML edits should be applied only after reading current file contents and preserving all existing site content.

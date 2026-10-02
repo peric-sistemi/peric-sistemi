@@ -1,0 +1,1 @@
+SEO master cleanup branch created. Pending deployment: canonical fixes, metadata normalization, favicon references, schema hardening, content expansion, and Search Console revalidation.
