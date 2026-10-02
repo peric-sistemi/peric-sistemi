@@ -1,0 +1,1 @@
+Favicon is provided as favicon.svg; reference it from HTML head.
