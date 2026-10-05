@@ -34,3 +34,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener("c
 
 const copy=document.querySelector(".copyright");
 if(copy)copy.innerHTML=`© ${new Date().getFullYear()} Perić Sistemi. Sva prava zadržana.`;
+
+// Perić Sistemi favicon
+if(document.head&&!document.querySelector('link[rel="icon"]')){
+  const favicon=document.createElement("link");
+  favicon.rel="icon";
+  favicon.type="image/svg+xml";
+  favicon.href="/favicon.svg?v=1";
+  document.head.appendChild(favicon);
+}
