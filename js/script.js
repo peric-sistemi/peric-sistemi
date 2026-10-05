@@ -57,6 +57,23 @@ if(document.head&&!document.querySelector('link[rel="icon"]')){
     document.head.appendChild(s);
   }
 
+  // Strengthen the existing homepage Organization entity with real external profiles.
+  document.querySelectorAll('script[type="application/ld+json"]').forEach(s=>{
+    try{
+      const data=JSON.parse(s.textContent);
+      if(!data||!data["@graph"])return;
+      let changed=false;
+      data["@graph"].forEach(item=>{
+        if(item["@type"]==="Organization"&&item["@id"]===site+"/#organization"){
+          item.sameAs=Array.from(new Set([...(item.sameAs||[]),instagram,youtube]));
+          item.email="milosperic93@gmail.com";
+          changed=true;
+        }
+      });
+      if(changed)s.textContent=JSON.stringify(data);
+    }catch(e){}
+  });
+
   // Make the site's real external profiles discoverable from every page.
   document.querySelectorAll("footer .footer").forEach(footer=>{
     const columns=footer.querySelectorAll(":scope > div");
@@ -106,6 +123,18 @@ if(document.head&&!document.querySelector('link[rel="icon"]')){
       ]
     });
   }
+
+  // Improve image semantics where the HTML has no useful alt text; decorative images remain untouched.
+  document.querySelectorAll("img").forEach(img=>{
+    if(img.getAttribute("aria-hidden")==="true")return;
+    const alt=(img.getAttribute("alt")||"").trim();
+    if(!alt){
+      const src=img.getAttribute("src")||"";
+      const file=(src.split("/").pop()||"").replace(/\.[^.]+$/,"" ).replace(/[-_]+/g," ").replace(/\s+/g," ").trim();
+      if(file)img.setAttribute("alt",`Perić Sistemi – ${file}`);
+    }
+    if(!img.hasAttribute("loading")&&!img.closest(".hero"))img.setAttribute("loading","lazy");
+  });
 
   // Useful, genuine FAQ content on the homepage. It is intentionally not added to every page.
   if(path==="" && !document.querySelector(".seo-faq")){
