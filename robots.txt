@@ -3,5 +3,3 @@ Allow: /
 
 Sitemap: https://pericsistemi.rs/sitemap.xml
 
-
-Sitemap: https://pericsistemi.rs/images-sitemap.xml
