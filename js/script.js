@@ -17,15 +17,13 @@ if(navToggle&&mainNav){
   }));
 }
 
+// Keep content visible immediately. Scroll-reveal animations delayed visibility
+// and can hurt perceived performance/accessibility, especially on mobile.
 const sections=document.querySelectorAll(".service,.brand,.box,.item,.why-grid div,.process-grid>div,.knowledge-grid a");
-if("IntersectionObserver" in window){
-  const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){entry.target.style.opacity="1";entry.target.style.transform="translateY(0)";observer.unobserve(entry.target)}
-    });
-  },{threshold:.12});
-  sections.forEach(section=>{section.style.opacity="0";section.style.transform="translateY(28px)";section.style.transition="opacity .6s ease,transform .6s ease";observer.observe(section)});
-}else{sections.forEach(section=>{section.style.opacity="1"})}
+sections.forEach(section=>{
+  section.style.opacity="1";
+  section.style.transform="none";
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener("click",function(e){
   const target=document.querySelector(this.getAttribute("href"));
