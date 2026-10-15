@@ -156,11 +156,8 @@ gap:10px;
 }
 
 .call-btn{
-
-background:#ff7a00;
-
-color:white;
-
+background:#c75f00;
+color:#ffffff;
 }
 
 .call-btn:hover{
@@ -172,9 +169,8 @@ transform:translateY(-2px);
 }
 
 .whatsapp-btn{
-
-background:#25d366;
-
+background:#168846;
+color:#ffffff;
 }
 
 .whatsapp-btn:hover{
@@ -299,9 +295,8 @@ font-weight:600;
 }
 
 .hero-buttons a:first-child{
-
-background:#ff7a00;
-
+background:#c75f00;
+color:#ffffff;
 }
 
 .hero-buttons a:last-child{
