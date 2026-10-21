@@ -45,6 +45,13 @@
 }
 </script>
 <link rel="canonical" href="https://pericsistemi.rs/">
+<script>
+(function () {
+  if (window.location.pathname === "/index.html") {
+    window.location.replace("https://pericsistemi.rs/" + window.location.search + window.location.hash);
+  }
+})();
+</script>
 <link rel="preload" as="image" href="/images/imageshero.webp.png" fetchpriority="high">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
