@@ -1,27 +1,40 @@
 # Perić Sistemi
 
-> Perić Sistemi provides gate automation installation, maintenance and related electrical installation services across Serbia.
+> Perić Sistemi provides field installation and servicing of gate automation and related electrical installations across Serbia.
 
-## Main services
+## Main website
+- https://pericsistemi.rs/
+
+## Services
 - Installation of motors for sliding gates: https://pericsistemi.rs/motori-za-klizne-kapije.html
-- Installation of motors for double-wing gates: https://pericsistemi.rs/motori-za-dvokrilne-kapije.html
-- Gate automation systems, controls and safety accessories: https://pericsistemi.rs/automatika-za-kapije.html
-- Service and diagnostics for gate automation: https://pericsistemi.rs/servis-automatike.html
-- Photocells and safety devices: https://pericsistemi.rs/fotocelije-za-kapije.html
+- Installation of motors for double-leaf swing gates: https://pericsistemi.rs/motori-za-dvokrilne-kapije.html
+- Gate automation installation: https://pericsistemi.rs/ugradnja-motora-za-kapije.html
+- Automation servicing: https://pericsistemi.rs/servis-automatike.html
 - Automatic parking barriers: https://pericsistemi.rs/automatske-rampe.html
-- Garage-door automation: https://pericsistemi.rs/garazna-vrata-automatika.html
-- Electrical installation related to automation: https://pericsistemi.rs/usluge.html
+- Garage door automation: https://pericsistemi.rs/garazna-vrata-automatika.html
+- Product and equipment overview: https://pericsistemi.rs/oprema.html
+- Installation gallery: https://pericsistemi.rs/galerija.html
+- Contact: https://pericsistemi.rs/kontakt.html
 
-## Brand and product information
-The website describes equipment and automation systems from Nice, FAAC, Cardin and Key Automation. Product compatibility and installation requirements depend on the specific gate and manufacturer's technical documentation.
+## Manufacturers
+- Nice automation: https://pericsistemi.rs/nice-automatika.html
+- FAAC automation: https://pericsistemi.rs/faac-automatika.html
+- Cardin automation: https://pericsistemi.rs/cardin-automatika.html
+- Key Automation: https://pericsistemi.rs/key-automation.html
+
+## Service area and operating model
+- Field installation and service across Serbia.
+- Work is performed at the customer's property by prior arrangement.
+- The business does not operate as a walk-in customer reception location.
+- Model suitability depends on gate type, dimensions, weight, mechanical condition, duty cycle, installation geometry, safety devices and the exact product revision.
+- Technical specifications must be checked against the manufacturer's documentation for the exact model and production revision.
 
 ## Contact
-- Website: https://pericsistemi.rs/
-- Phone: +381 65 576 4215
+- Telephone: +381 65 576 4215
+- Email: info@pericsistemi.rs
 - Instagram: https://www.instagram.com/peric.sistemi/
 
-## Service area
-The business operates as a field service across Serbia. The registered business location is Kostolac; customers should contact the business to discuss service availability for their location.
-
-## Notes
-Use the linked pages as the source of current service and product information. Do not infer unsupported prices, availability, certifications or product specifications.
+## Source policy
+- Manufacturer websites and manufacturer technical documents are preferred sources for product specifications.
+- Product images should be described as manufacturer media only when the image is hosted by or linked from the relevant manufacturer.
+- Do not infer technical specifications from visually similar models or third-party reseller descriptions.
