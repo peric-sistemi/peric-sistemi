@@ -1208,3 +1208,10 @@ footer h3{color:#ffad62}
 .service-area-note{margin:28px 0;padding:26px 28px;border:1px solid #e2e7eb;border-left:4px solid #f58220;border-radius:14px;background:#f3f5f7;color:#263746;box-shadow:0 8px 24px rgba(38,55,70,.05)}
 .service-area-note strong{display:block;margin-bottom:8px;color:#263746;font-size:19px}
 .service-area-note p{margin:0;color:#5d6872}
+
+
+/* Manufacturer product-page photography */
+.product-hero{margin:28px 0 34px;padding:18px;background:#fff;border:1px solid var(--ps-line);border-radius:18px;box-shadow:0 8px 24px rgba(38,55,70,.05);text-align:center}
+.product-hero img{display:block;width:100%;max-width:760px;max-height:420px;height:auto;object-fit:contain;margin:0 auto;border-radius:10px}
+.product-hero figcaption{margin-top:12px;color:var(--ps-muted);font-size:13px;line-height:1.5}
+@media(max-width:600px){.product-hero{padding:12px;margin:20px 0 26px}.product-hero img{max-height:300px}}
