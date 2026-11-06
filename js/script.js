@@ -1,6 +1,6 @@
 /* PERIĆ SISTEMI – site interactions */
 const header=document.querySelector("header");
-window.addEventListener("scroll",()=>{if(!header)return;if(window.scrollY>50){header.style.background="rgba(8,8,8,.96)";header.style.padding="0"}else{header.style.background="rgba(10,10,10,.85)"}});
+window.addEventListener("scroll",()=>{if(!header)return;header.classList.toggle("is-scrolled",window.scrollY>50);});
 
 const navToggle=document.querySelector(".nav-toggle");
 const mainNav=document.querySelector("#main-nav");
