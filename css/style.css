@@ -1202,3 +1202,9 @@ footer h3{color:#ffad62}
 @media(prefers-reduced-motion:reduce){
   .service,.brand,.why-grid div,.process-grid>div,.quick-grid a,.knowledge-grid a{transform:none!important}
 }
+
+
+/* Service-area notice: field service across Serbia, no walk-in office */
+.service-area-note{margin:28px 0;padding:26px 28px;border:1px solid #e2e7eb;border-left:4px solid #f58220;border-radius:14px;background:#f3f5f7;color:#263746;box-shadow:0 8px 24px rgba(38,55,70,.05)}
+.service-area-note strong{display:block;margin-bottom:8px;color:#263746;font-size:19px}
+.service-area-note p{margin:0;color:#5d6872}
