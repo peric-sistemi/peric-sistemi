@@ -1110,3 +1110,95 @@ nav#main-nav li a{display:block;padding:13px 8px;border-bottom:1px solid rgba(25
 html{scroll-behavior:auto}
 *,*::before,*::after{transition:none!important;animation:none!important}
 }
+
+
+/* =====================================================
+   PERIC SISTEMI — LIGHT VISUAL SYSTEM
+   Inspired by PelBox's lighter, clearer presentation.
+   Brand orange remains the primary accent.
+===================================================== */
+:root{
+  color-scheme:light;
+  --ps-bg:#ffffff;
+  --ps-surface:#f3f5f7;
+  --ps-card:#ffffff;
+  --ps-ink:#263746;
+  --ps-muted:#5d6872;
+  --ps-line:#e2e7eb;
+  --ps-orange:#f58220;
+  --ps-orange-dark:#d96500;
+  --ps-navy:#263746;
+  --ps-green:#168846;
+}
+html{background:var(--ps-bg)}
+body{background:var(--ps-bg);color:var(--ps-ink)}
+a{color:var(--ps-ink)}
+header{
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--ps-line);
+  box-shadow:0 4px 18px rgba(38,55,70,.06);
+}
+nav a{color:var(--ps-ink)}
+nav a:hover,.breadcrumbs a:hover{color:var(--ps-orange-dark)}
+.nav-toggle{border-color:#cbd3da}
+.nav-toggle span{background:var(--ps-ink)}
+nav#main-nav{background:rgba(255,255,255,.99);border-top:1px solid var(--ps-line)}
+nav#main-nav li a{color:var(--ps-ink);border-bottom-color:var(--ps-line)}
+.call-btn,.hero-buttons a:first-child{background:var(--ps-orange-dark);color:#fff}
+.call-btn:hover,.hero-buttons a:first-child:hover{background:var(--ps-orange);color:#17212b}
+.whatsapp-btn{background:var(--ps-green);color:#fff}
+.hero{background:#263746}
+.hero .overlay{background:linear-gradient(90deg,rgba(18,32,43,.62),rgba(18,32,43,.30))}
+.hero h1,.hero p{color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.hero-buttons a:last-child{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+.stats,.quick-links,.process-section,.faq,.areas,#brendovi,.why,.knowledge{
+  background:var(--ps-surface);
+  color:var(--ps-ink);
+}
+.stats .box,.service,.brand,.why-grid div,.process-grid>div,
+.feature-grid>div,.quick-grid a,.knowledge-grid a,.faq details,
+.area-tags span,.cta-box{
+  background:var(--ps-card);
+  color:var(--ps-ink);
+  border:1px solid var(--ps-line);
+  box-shadow:0 8px 24px rgba(38,55,70,.055);
+}
+.stats h3,.service h3,.brand h3,.why-grid h3,.process-grid h3,
+.faq summary,.knowledge-grid strong,.quick-grid a{color:var(--ps-ink)}
+.stats h2,.service i,.why-grid i,.process-grid b,.brand h3,
+.eyebrow{color:var(--ps-orange-dark)}
+section h2,.content-page h1,.content-page h2,.content-page h3{color:var(--ps-ink)}
+.subtitle,.content-page p,.lead,.service p,.brand p,.why-grid p,
+.process-grid p,.knowledge-grid span,.faq details p,.check-list li,
+.breadcrumbs,.area-tags span{color:var(--ps-muted)!important}
+.content-page,.areas{background:var(--ps-bg);color:var(--ps-ink)}
+.content-page .lead{color:#465663!important}
+.check-list li{background:var(--ps-surface);color:var(--ps-ink)}
+.quick-grid a:hover,.knowledge-grid a:hover,.service:hover,.brand:hover,
+.why-grid div:hover,.process-grid>div:hover{
+  border-color:rgba(245,130,32,.55);
+  box-shadow:0 14px 32px rgba(38,55,70,.10);
+}
+.text-link,.service-link{color:var(--ps-orange-dark)}
+.faq details{border-radius:14px}
+.cta-box{border-color:rgba(245,130,32,.4)}
+.contact .left p,.contact .left a{color:var(--ps-ink)}
+.contact .left a:hover{color:var(--ps-orange-dark)}
+.contact .left i{color:var(--ps-orange-dark)}
+footer{background:#263746;border-top:1px solid #344b5d;color:#fff}
+footer a,footer p{color:#e5ebef}
+footer h3{color:#ffad62}
+.copyright{border-top-color:rgba(255,255,255,.16);color:#c1ccd4}
+.floating-whatsapp{background:#168846}
+.breadcrumbs a{color:#52616d}
+.breadcrumbs span:last-child{color:var(--ps-ink)}
+.catalog-card,.catalog-trust,.documentation-section,.scope-box{
+  box-shadow:0 8px 24px rgba(38,55,70,.05);
+}
+@media(max-width:768px){
+  header .container{background:transparent}
+  nav#main-nav{box-shadow:0 14px 24px rgba(38,55,70,.10)}
+}
+@media(prefers-reduced-motion:reduce){
+  .service,.brand,.why-grid div,.process-grid>div,.quick-grid a,.knowledge-grid a{transform:none!important}
+}
