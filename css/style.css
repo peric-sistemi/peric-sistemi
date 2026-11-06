@@ -1215,3 +1215,50 @@ footer h3{color:#ffad62}
 .product-hero img{display:block;width:100%;max-width:760px;max-height:420px;height:auto;object-fit:contain;margin:0 auto;border-radius:10px}
 .product-hero figcaption{margin-top:12px;color:var(--ps-muted);font-size:13px;line-height:1.5}
 @media(max-width:600px){.product-hero{padding:12px;margin:20px 0 26px}.product-hero img{max-height:300px}}
+
+
+/* PERIĆ SISTEMI — GRAPHITE BLUE / LIGHT SALES THEME (2026) */
+:root{--ps-ink:#263746;--ps-navy:#263746;--ps-muted:#586a78;--ps-bg:#fff;--ps-surface:#f2f5f7;--ps-card:#fff;--ps-orange:#f58220;--ps-orange-dark:#c96308;--ps-line:#dce4e9}
+body{background:#fff!important;color:#263746!important}
+body p,body li,body label,body .spec{color:#465a68}
+body h1,body h2,body h3,body h4,body strong{color:#263746}
+section h2,.content-page h1,.content-page h2,.content-page h3{color:#263746!important}
+.subtitle,.content-page p,.service p,.brand p,.why-grid p,.process-grid p,.knowledge-grid span,.faq details p{color:#586a78!important}
+header,header .container{background:rgba(255,255,255,.97)!important}
+header{border-bottom:1px solid #dce4e9!important;box-shadow:0 4px 18px rgba(38,55,70,.08)!important}
+nav a,.breadcrumbs a{color:#263746!important}
+nav a:hover,.breadcrumbs a:hover{color:#c96308!important}
+.nav-toggle span{background:#263746!important}
+nav#main-nav{background:#fff!important}
+nav#main-nav li a{color:#263746!important}
+.stats,.quick-links,.process-section,.faq,.areas,#brendovi,.why,.knowledge{background:#f2f5f7!important;color:#263746!important}
+.stats .box,.service,.brand,.why-grid div,.process-grid>div,.feature-grid>div,.quick-grid a,.knowledge-grid a,.faq details,.area-tags span,.cta-box{background:#fff!important;color:#263746!important;border-color:#dce4e9!important;box-shadow:0 8px 24px rgba(38,55,70,.06)!important}
+.stats h3,.service h3,.brand h3,.why-grid h3,.process-grid h3,.faq summary,.knowledge-grid strong,.quick-grid a{color:#263746!important}
+.stats h2,.service i,.why-grid i,.process-grid b,.brand h3,.eyebrow{color:#c96308!important}
+.content-page,.areas,#usluge,#galerija,#kontakt{background:#fff!important;color:#263746!important}
+footer{background:#263746!important;color:#fff!important}
+footer p,footer a{color:#e7edf1!important}
+footer h3{color:#ffb36d!important}
+.catalog-card{background:#fff!important;color:#263746!important;border:1px solid #dce4e9!important}
+.catalog-card h2,.catalog-card h3,.catalog-card strong{color:#263746!important}
+.catalog-card p,.catalog-card .spec{color:#526574!important}
+.product-photo{display:block;width:100%;height:220px;object-fit:contain;background:#fff;border:1px solid #e6ebef;border-radius:12px;padding:10px;margin:0 0 10px}
+.product-photo-label{font-size:.78rem;color:#6b7b86;margin:0 0 8px;line-height:1.35}
+.product-document-preview{display:block;width:100%;height:220px;border:1px solid #e6ebef;border-radius:12px;background:#f7f9fa;margin:0 0 10px}
+.product-contact-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}
+.product-buy-link,.product-email-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 13px;border-radius:9px;background:#263746;color:#fff!important;font-size:.84rem;font-weight:700;text-decoration:none}
+.product-buy-link{background:#168846}
+.product-email-link{background:#eaf0f3;color:#263746!important}
+.product-buy-link:hover,.product-email-link:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.catalog-sales-banner{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.8fr);gap:26px;align-items:center;margin:28px 0 36px;padding:30px;border:1px solid #dce4e9;border-left:5px solid #f58220;border-radius:18px;background:linear-gradient(135deg,#f5f8fa,#fff);box-shadow:0 12px 30px rgba(38,55,70,.07)}
+.catalog-sales-banner h2{margin:4px 0 12px!important;text-align:left!important;font-size:clamp(24px,3vw,34px)!important;color:#263746!important}
+.catalog-sales-banner p{margin:0;color:#586a78!important}
+.sales-eyebrow{font-size:12px;font-weight:800;letter-spacing:1.8px;color:#c96308}
+.catalog-sales-actions{display:grid;gap:10px}
+.catalog-sales-actions a{display:block;padding:12px 15px;text-align:center;border-radius:10px;background:#263746;color:#fff!important;font-weight:700}
+.catalog-sales-actions a:nth-child(2){background:#168846}
+.catalog-sales-actions a:nth-child(3){background:#eaf0f3;color:#263746!important}
+@media(max-width:760px){.catalog-sales-banner{grid-template-columns:1fr;padding:22px}.product-photo,.product-document-preview{height:190px}.product-contact-actions{flex-direction:column}.product-buy-link,.product-email-link{width:100%}}
+
+.hero-buttons .hero-equipment-link{background:#fff;color:#263746;border:2px solid #fff}
+.hero-buttons .hero-equipment-link:hover{background:#f58220;color:#263746}
