@@ -19,6 +19,7 @@
 ## Manufacturers
 - Nice automation: https://pericsistemi.rs/nice-automatika.html
 - FAAC automation: https://pericsistemi.rs/faac-automatika.html
+- FAAC 746 C and 844 C technical comparison: https://pericsistemi.rs/faac-746c-844c.html
 - Cardin automation: https://pericsistemi.rs/cardin-automatika.html
 - Key Automation: https://pericsistemi.rs/key-automation.html
 
