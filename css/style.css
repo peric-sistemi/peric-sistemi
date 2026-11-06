@@ -1269,3 +1269,12 @@ footer h3{color:#ffb36d!important}
 .product-visual-fallback .visual-brand{font-size:.78rem;font-weight:800;letter-spacing:.16em;color:#f58220}
 .product-visual-fallback .visual-model{font-size:1.25rem;font-weight:800;line-height:1.2;color:#263746}
 .product-visual-fallback .visual-caption{font-size:.76rem;color:#586a78}
+
+
+/* Static product visuals: never embed PDFs in the catalog */
+.product-visual-fallback{height:220px;width:100%;margin:0 0 10px;padding:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;overflow:hidden;border:1px solid #dce4e9;border-radius:12px;background:radial-gradient(circle at 50% 38%,#fff 0,#f3f6f8 72%,#e9eff3 100%);text-align:center;color:#263746}
+.product-visual-brand{font-size:11px;letter-spacing:2px;font-weight:800;color:#c96308}
+.product-visual-icon{width:68px;height:68px;display:grid;place-items:center;border-radius:50%;background:#263746;color:#fff;font-size:30px;box-shadow:0 8px 20px rgba(38,55,70,.16)}
+.product-visual-fallback strong{font-size:16px;color:#263746;line-height:1.25}
+.product-visual-fallback span{font-size:11px;font-weight:700;letter-spacing:1px;color:#71818c}
+@media(max-width:760px){.product-visual-fallback{height:190px}}
