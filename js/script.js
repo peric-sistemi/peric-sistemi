@@ -2,6 +2,17 @@
 (() => {
   "use strict";
 
+  // Provide a keyboard skip link on pages with a main landmark.
+  const mainContent = document.querySelector("main");
+  if (mainContent && !document.querySelector(".skip-link")) {
+    if (!mainContent.id) mainContent.id = "main-content";
+    const skipLink = document.createElement("a");
+    skipLink.className = "skip-link";
+    skipLink.href = "#" + mainContent.id;
+    skipLink.textContent = "Preskoči na sadržaj";
+    document.body.insertBefore(skipLink, document.body.firstChild);
+  }
+
   const header = document.querySelector("header");
   if (header) {
     const updateHeader = () => header.classList.toggle("is-scrolled", window.scrollY > 50);
