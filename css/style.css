@@ -97,7 +97,7 @@ padding:18px 0;
 
 .logo img{
 
-height:70px;
+height:62px;
 
 }
 
@@ -105,7 +105,7 @@ nav ul{
 
 display:flex;
 
-gap:35px;
+gap:16px;
 
 align-items:center;
 
@@ -115,7 +115,7 @@ nav a{
 
 font-weight:600;
 
-font-size:15px;
+font-size:14px;
 
 letter-spacing:.5px;
 
@@ -1296,3 +1296,17 @@ footer h3{color:#ffb36d!important}
 ul.content-list{list-style:disc!important;padding-left:24px;margin:14px 0 24px;color:#cfcfcf}
 ol.content-list{list-style:decimal!important;padding-left:24px;margin:14px 0 24px;color:#cfcfcf}
 .content-list li{margin:9px 0;padding-left:4px;line-height:1.65}
+
+/* National-service navigation, compact supplier acknowledgement and contact clarity */
+@media(min-width:769px) and (max-width:1180px){
+  nav ul{gap:10px}
+  nav a{font-size:13px}
+  .header-buttons{gap:8px}
+  .call-btn,.whatsapp-btn{padding:10px 14px;font-size:13px}
+}
+.footer-supplier-note{max-width:250px;padding:12px 14px;border-top:1px solid rgba(255,255,255,.14);margin-top:12px;text-align:left}
+.footer-partner-label{font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
+.footer-supplier-note p:last-child{font-size:.86rem;line-height:1.55;color:#cbd0d8}
+.service-area-note{min-height:240px;padding:28px;border:1px solid #30363d;border-radius:12px;background:#161b22;display:flex;flex-direction:column;justify-content:center}
+.service-area-note h2{margin:0 0 12px;text-align:left}
+.service-area-note p{margin:0 0 12px;color:#cfd4dc}
