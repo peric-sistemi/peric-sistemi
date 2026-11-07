@@ -15,7 +15,6 @@
 - Fotoćelije: https://pericsistemi.rs/fotocelije-za-kapije.html
 - Dodatna oprema: https://pericsistemi.rs/dodatna-oprema-za-kapije.html
 - Katalog opreme: https://pericsistemi.rs/oprema.html
-- Partner u nabavci opreme: https://pericsistemi.rs/partneri.html
 - Galerija radova: https://pericsistemi.rs/galerija.html
 - Kontakt: https://pericsistemi.rs/kontakt.html
 
@@ -50,7 +49,7 @@
 
 ## Napomena o ponudi
 - Aktuelna cena i dostupnost potvrđuju se za konkretan upit; stranice ne predstavljaju garanciju stanja lagera.
-- Saradnja sa Stilmatik d.o.o. odnosi se na nabavku opreme i ne znači automatski status ovlašćenog distributera ili servisa svih brendova.
+- Kupac ponudu, proveru kompatibilnosti i komunikaciju za opremu vodi direktno sa Perić Sistemi; cene i dostupnost potvrđuju se za konkretan upit.
 
 ## Politika izvora
 - Za tehničke specifikacije prednost imaju zvanična dokumentacija proizvođača i važeća uputstva.
