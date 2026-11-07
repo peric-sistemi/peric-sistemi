@@ -31,6 +31,7 @@
 - Key Automation: https://pericsistemi.rs/key-automation.html
 
 ## Tehnički vodiči
+- Centar tehničkih vodiča: https://pericsistemi.rs/vodici-za-automatiku-kapija.html
 - Kako izabrati motor za kapiju: https://pericsistemi.rs/kako-izabrati-motor-za-kapiju.html
 - Koliko košta motor za kapiju: https://pericsistemi.rs/koliko-kosta-motor-za-kapiju.html
 - Priprema instalacije za motor za kapiju: https://pericsistemi.rs/priprema-instalacije-za-motor-za-kapiju.html
