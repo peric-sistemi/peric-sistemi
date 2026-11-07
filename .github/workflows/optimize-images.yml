@@ -1,0 +1,124 @@
+name: Optimize website images
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'images/**'
+      - '**.html'
+      - '.github/workflows/optimize-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install image optimizer
+        run: python -m pip install --upgrade Pillow
+
+      - name: Create optimized WebP files and update site references
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          
+          root = Path(".")
+          image_dir = root / "images"
+          mappings = {}
+          
+          for source in sorted(image_dir.iterdir()):
+              if not source.is_file() or source.suffix.lower() not in {".jpg", ".jpeg", ".png"}:
+                  continue
+          
+              stem = source.stem
+              if stem.lower().endswith(".webp"):
+                  stem = stem[:-5]
+              target = source.with_name(stem + ".webp")
+          
+              try:
+                  with Image.open(source) as opened:
+                      image = ImageOps.exif_transpose(opened)
+                      if image.mode not in ("RGB", "RGBA"):
+                          image = image.convert("RGBA" if "A" in image.getbands() else "RGB")
+          
+                      max_side = 1400 if source.name.lower() == "logo.png" else 1920
+                      if max(image.size) > max_side:
+                          ratio = max_side / max(image.size)
+                          size = (max(1, round(image.width * ratio)), max(1, round(image.height * ratio)))
+                          image = image.resize(size, Image.Resampling.LANCZOS)
+          
+                      options = {
+                          "format": "WEBP",
+                          "quality": 86 if source.name.lower() == "logo.png" else 82,
+                          "method": 6,
+                          "exact": True,
+                      }
+                      icc = opened.info.get("icc_profile")
+                      if icc:
+                          options["icc_profile"] = icc
+                      image.save(target, **options)
+          
+                  mappings[source.as_posix()] = target.as_posix()
+                  print(f"Optimized {source} -> {target}")
+              except Exception as exc:
+                  print(f"WARNING: Could not optimize {source}: {exc}")
+          
+          text_suffixes = {".html", ".css", ".js", ".xml", ".txt", ".md"}
+          for file in root.rglob("*"):
+              if not file.is_file() or ".git" in file.parts or file.suffix.lower() not in text_suffixes:
+                  continue
+              try:
+                  original = file.read_text(encoding="utf-8")
+              except UnicodeDecodeError:
+                  continue
+              updated = original
+              for old, new in mappings.items():
+                  updated = updated.replace(old, new)
+              if updated != original:
+                  file.write_text(updated, encoding="utf-8")
+                  print(f"Updated references in {file}")
+          
+          # Remove only source images whose public references have been replaced.
+          # Unreferenced originals remain untouched.
+          searchable = []
+          for file in root.rglob("*"):
+              if not file.is_file() or ".git" in file.parts or file.suffix.lower() not in text_suffixes:
+                  continue
+              try:
+                  searchable.append(file.read_text(encoding="utf-8"))
+              except UnicodeDecodeError:
+                  pass
+          
+          for old in mappings:
+              if not any(old in text for text in searchable):
+                  Path(old).unlink(missing_ok=True)
+                  print(f"Removed replaced source from published assets: {old}")
+          PY
+
+      - name: Commit optimized assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No image optimization changes to commit."
+            exit 0
+          fi
+          git commit -m "Optimize public site images as WebP"
+          git push
