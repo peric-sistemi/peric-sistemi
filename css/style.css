@@ -1286,3 +1286,7 @@ footer h3{color:#ffb36d!important}
 .hero-buttons .hero-equipment-link{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:18px 30px;background:#fff!important;color:#263746!important;border:2px solid #fff!important;border-radius:50px;font-weight:800;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.18);opacity:1!important;visibility:visible!important;position:relative;z-index:3}
 .hero-buttons .hero-equipment-link:hover,.hero-buttons .hero-equipment-link:focus-visible{background:#f58220!important;border-color:#f58220!important;color:#263746!important;transform:translateY(-2px)}
 @media(max-width:760px){.hero{min-height:680px;height:auto;padding:120px 0 70px;box-sizing:border-box}.hero-content{position:relative;left:auto;top:auto;transform:none;width:min(900px,calc(100% - 32px));margin:0 auto}.hero-buttons{display:flex;flex-direction:column;align-items:stretch;gap:12px}.hero-buttons a,.hero-buttons .hero-photo-link,.hero-buttons .hero-equipment-link{width:100%;box-sizing:border-box;text-align:center;min-height:56px}}
+
+
+/* Supplier partnership panel responsive layout */
+@media(max-width:768px){.partner-panel{grid-template-columns:1fr!important;padding:22px!important}}
