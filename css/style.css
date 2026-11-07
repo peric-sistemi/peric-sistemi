@@ -1290,3 +1290,9 @@ footer h3{color:#ffb36d!important}
 
 /* Supplier partnership panel responsive layout */
 @media(max-width:768px){.partner-panel{grid-template-columns:1fr!important;padding:22px!important}}
+
+
+/* Readable lists on supplier and information pages */
+ul.content-list{list-style:disc!important;padding-left:24px;margin:14px 0 24px;color:#cfcfcf}
+ol.content-list{list-style:decimal!important;padding-left:24px;margin:14px 0 24px;color:#cfcfcf}
+.content-list li{margin:9px 0;padding-left:4px;line-height:1.65}
