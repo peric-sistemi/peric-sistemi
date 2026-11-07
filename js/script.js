@@ -48,6 +48,46 @@
     });
   }
 
+  // Client-side product catalogue search (does not send or store query data).
+  const catalogInput = document.getElementById("catalog-search-input");
+  const catalogStatus = document.getElementById("catalog-search-status");
+  const catalogEmpty = document.getElementById("catalog-search-empty");
+  if (catalogInput) {
+    const cards = [...document.querySelectorAll(".catalog-grid .catalog-card")];
+    const entries = cards.map((card) => ({
+      card,
+      heading: (card.querySelector("h2")?.textContent || "").toLocaleLowerCase("sr-Latn"),
+      items: [...card.querySelectorAll(".model-list > li")]
+    }));
+    const filterCatalog = () => {
+      const query = catalogInput.value.trim().toLocaleLowerCase("sr-Latn");
+      let visible = 0;
+      let total = 0;
+      entries.forEach(({ card, heading, items }) => {
+        let cardVisible = 0;
+        items.forEach((item) => {
+          total += 1;
+          const searchable = (item.textContent || "").toLocaleLowerCase("sr-Latn");
+          const matches = !query || heading.includes(query) || searchable.includes(query);
+          item.hidden = !matches;
+          if (matches) {
+            visible += 1;
+            cardVisible += 1;
+          }
+        });
+        card.hidden = items.length > 0 && cardVisible === 0;
+      });
+      if (catalogStatus) {
+        catalogStatus.textContent = query
+          ? `${visible} od ${total} prikazanih stavki odgovara pretrazi.`
+          : `Prikazano ${total} stavki iz kataloga.`;
+      }
+      if (catalogEmpty) catalogEmpty.hidden = visible !== 0;
+    };
+    catalogInput.addEventListener("input", filterCatalog);
+    filterCatalog();
+  }
+
   // Smooth-scroll only valid in-page anchors; ignore href="#" placeholders.
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (event) => {
