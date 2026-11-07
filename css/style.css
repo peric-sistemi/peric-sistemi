@@ -1358,3 +1358,20 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:380px){
   header .logo img{max-width:62vw;max-height:60px}
 }
+
+
+/* Logo sizing: preserve source aspect ratio on desktop and tablet. */
+header .logo{display:flex;align-items:center;flex:0 1 auto;min-width:0}
+header .logo img{
+  display:block;
+  width:auto!important;
+  height:62px!important;
+  max-width:300px;
+  max-height:62px;
+  object-fit:contain;
+  object-position:left center;
+  flex:0 1 auto;
+}
+@media(max-width:1050px){
+  header .logo img{height:58px!important;max-height:58px;max-width:280px}
+}
