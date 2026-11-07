@@ -140,6 +140,15 @@ GSC Wizard je vratio status `payment_required`: probni period je istekao i nema 
 8. **Google Business Profile:** osvežiti usluge, opis, fotografije, područje rada i recenzije. Ne predstavljati poslovnu bazu kao maloprodajnu lokaciju ako se kupci tamo ne primaju.
 9. **Konverzije:** kada postoje GA4/Google Ads identifikatori, pratiti klik na telefon, WhatsApp, e-mail i slanje upita. ID-jevi se ne smeju izmišljati.
 
+
+## 6.1. Lokalni signali i konzistentnost poslovnih podataka
+
+Dodatna javna provera je otvorila važan zadatak van samog sajta:
+- Direktorijum Firme iz Srbije i dalje prikazuje staru ponudu sa audio-interfonima i kontakt `milosperic93@gmail.com`, dok novi sajt promoviše primarno `info@pericsistemi.rs` i ne nudi audio-interfone. Ovo je zastareo podatak treće strane, ne sadržaj trenutnog GitHub izvora. Potrebno je izmeniti ili ukloniti te navode u profilu direktorijuma.
+- Javni rezultat Google pretrage za ranije indeksirani `oprema.html` i dalje je prikazivao stariji opis koji pominje Stilmatik i audio-interfone. Taj rezultat je označen starim datumom indeksiranja; nakon uspešnog objavljivanja novog HTML-a potrebno je zatražiti ponovno indeksiranje kada Search Console pristup bude aktivan.
+- U ovom pregledu nije dobijen nedvosmisleno uparen Google Business Profile rezultat za Perić Sistemi. Zato ne mogu potvrditi broj recenzija, prosečnu ocenu, primarnu kategoriju ili stanje profila. Ne zaključujem da profil ne postoji.
+- Za lokalni ranking treba uskladiti poslovno ime, telefon, domen i poslovni model u svim pouzdanim direktorijumima; ne ostavljati staru e-mail adresu ili usluge koje više nisu u ponudi.
+
 ## 7. Izvori konkurentskog pregleda
 
 - Automatski Sistem: https://automatskisistemi.rs/
