@@ -1326,3 +1326,15 @@ ol.content-list{list-style:decimal!important;padding-left:24px;margin:14px 0 24p
 .catalog-search-inner input:focus{outline:3px solid rgba(242,137,40,.28);border-color:#d76a0b}
 #catalog-search-status,#catalog-search-empty{margin:9px 0 0;color:#475467;font-size:.92rem}
 .catalog-card[hidden],.model-list li[hidden]{display:none!important}
+
+/* Tablet navigation breakpoint: avoid a squeezed desktop menu between 769px and 1050px. */
+@media(max-width:1050px){
+  header .container{flex-direction:row;gap:14px;position:relative}
+  header .logo{margin-right:auto}
+  header .header-buttons{display:none}
+  .nav-toggle{display:block;order:3}
+  nav#main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:rgba(9,12,16,.98);border-top:1px solid rgba(255,255,255,.08);padding:18px 5% 22px}
+  nav#main-nav.mobile-open{display:block}
+  nav#main-nav ul{flex-direction:column;align-items:stretch;gap:0}
+  nav#main-nav li a{display:block;padding:13px 8px;border-bottom:1px solid rgba(255,255,255,.06);text-align:center}
+}
