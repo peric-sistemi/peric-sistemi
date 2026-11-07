@@ -1338,3 +1338,13 @@ ol.content-list{list-style:decimal!important;padding-left:24px;margin:14px 0 24p
   nav#main-nav ul{flex-direction:column;align-items:stretch;gap:0}
   nav#main-nav li a{display:block;padding:13px 8px;border-bottom:1px solid rgba(255,255,255,.06);text-align:center}
 }
+
+/* Visible keyboard focus and reduced-motion support */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid #ffad5b;
+  outline-offset:3px;
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
