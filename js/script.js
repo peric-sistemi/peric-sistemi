@@ -11,6 +11,27 @@
 
   const navToggle = document.querySelector(".nav-toggle");
   const mainNav = document.querySelector("#main-nav");
+  // Keep the quote-request path visible on desktop and mobile navigation.
+  const estimatePath = "/brza-procena.html";
+  if (mainNav) {
+    const list = mainNav.querySelector("ul");
+    if (list && !list.querySelector('a[href="' + estimatePath + '"]')) {
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = estimatePath;
+      link.textContent = "Brza procena";
+      item.appendChild(link);
+      list.appendChild(item);
+    }
+  }
+  const headerButtons = document.querySelector(".header-buttons");
+  if (headerButtons && !headerButtons.querySelector(".estimate-btn")) {
+    const estimate = document.createElement("a");
+    estimate.href = estimatePath;
+    estimate.className = "estimate-btn";
+    estimate.textContent = "Brza procena";
+    headerButtons.prepend(estimate);
+  }
   if (navToggle && mainNav) {
     navToggle.addEventListener("click", () => {
       const isOpen = mainNav.classList.toggle("mobile-open");
