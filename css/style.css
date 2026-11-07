@@ -1310,3 +1310,10 @@ ol.content-list{list-style:decimal!important;padding-left:24px;margin:14px 0 24p
 .service-area-note{min-height:240px;padding:28px;border:1px solid #30363d;border-radius:12px;background:#161b22;display:flex;flex-direction:column;justify-content:center}
 .service-area-note h2{margin:0 0 12px;text-align:left}
 .service-area-note p{margin:0 0 12px;color:#cfd4dc}
+
+.hero-price-note{display:inline-block;margin:0 auto 24px;padding:10px 16px;border:1px solid rgba(255,255,255,.38);border-radius:999px;background:rgba(0,0,0,.5);color:#fff;font-size:15px;font-weight:500;line-height:1.5}
+.hero-price-note strong{color:#ffad5b}
+.hero-buttons .hero-estimate-link{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:18px 30px;background:#ff7a00;color:#fff;border:2px solid #ff7a00;border-radius:50px;font-weight:800;text-decoration:none}
+.hero-buttons .hero-estimate-link:hover,.hero-buttons .hero-estimate-link:focus-visible{background:#e56900;border-color:#fff;color:#fff;transform:translateY(-2px)}
+.estimate-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 15px;border-radius:50px;background:#ff7a00;color:#fff!important;font-weight:750;font-size:13px;white-space:nowrap}
+.estimate-btn:hover,.estimate-btn:focus-visible{background:#e56900;color:#fff!important;outline:3px solid rgba(255,122,0,.3);outline-offset:2px}
