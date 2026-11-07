@@ -1,41 +1,53 @@
 # Perić Sistemi
 
-> Perić Sistemi provides field installation and servicing of gate automation and related electrical installations across Serbia.
+> Perić Sistemi pruža terensku ugradnju i servis automatike za kapije, parking rampe, garažna vrata i prateće elektroinstalacije širom Srbije. Oprema se može zatražiti i bez ugradnje.
 
-## Main website
+## Glavni sajt
 - https://pericsistemi.rs/
 
-## Services
-- Installation of motors for sliding gates: https://pericsistemi.rs/motori-za-klizne-kapije.html
-- Installation of motors for double-leaf swing gates: https://pericsistemi.rs/motori-za-dvokrilne-kapije.html
-- Gate automation installation: https://pericsistemi.rs/ugradnja-motora-za-kapije.html
-- Automation servicing: https://pericsistemi.rs/servis-automatike.html
-- Automatic parking barriers: https://pericsistemi.rs/automatske-rampe.html
-- Garage door automation: https://pericsistemi.rs/garazna-vrata-automatika.html
-- Product and equipment overview: https://pericsistemi.rs/oprema.html
-- Installation gallery: https://pericsistemi.rs/galerija.html
-- Contact: https://pericsistemi.rs/kontakt.html
+## Usluge
+- Ugradnja motora za kapije: https://pericsistemi.rs/ugradnja-motora-za-kapije.html
+- Motori za klizne kapije: https://pericsistemi.rs/motori-za-klizne-kapije.html
+- Motori za dvokrilne kapije: https://pericsistemi.rs/motori-za-dvokrilne-kapije.html
+- Servis automatike: https://pericsistemi.rs/servis-automatike.html
+- Automatske parking rampe: https://pericsistemi.rs/automatske-rampe.html
+- Automatika za garažna vrata: https://pericsistemi.rs/garazna-vrata-automatika.html
+- Fotoćelije: https://pericsistemi.rs/fotocelije-za-kapije.html
+- Dodatna oprema: https://pericsistemi.rs/dodatna-oprema-za-kapije.html
+- Katalog opreme: https://pericsistemi.rs/oprema.html
+- Partner u nabavci opreme: https://pericsistemi.rs/partneri.html
+- Galerija radova: https://pericsistemi.rs/galerija.html
+- Kontakt: https://pericsistemi.rs/kontakt.html
 
-## Manufacturers
-- Nice automation: https://pericsistemi.rs/nice-automatika.html
-- FAAC automation: https://pericsistemi.rs/faac-automatika.html
-- FAAC 746 C and 844 C technical comparison: https://pericsistemi.rs/faac-746c-844c.html
-- Cardin automation: https://pericsistemi.rs/cardin-automatika.html
+## Proizvođači i modeli
+- Nice automatika: https://pericsistemi.rs/nice-automatika.html
+- Nice Robo 600: https://pericsistemi.rs/nice-robo-600.html
+- Nice Robus 800: https://pericsistemi.rs/nice-robus-800.html
+- FAAC automatika: https://pericsistemi.rs/faac-automatika.html
+- FAAC 740: https://pericsistemi.rs/faac-740.html
+- FAAC 741: https://pericsistemi.rs/faac-741.html
+- FAAC 746 C i 844 C: https://pericsistemi.rs/faac-746c-844c.html
+- Cardin automatika: https://pericsistemi.rs/cardin-automatika.html
 - Key Automation: https://pericsistemi.rs/key-automation.html
 
-## Service area and operating model
-- Field installation and service across Serbia.
-- Work is performed at the customer's property by prior arrangement.
-- The business does not operate as a walk-in customer reception location.
-- Model suitability depends on gate type, dimensions, weight, mechanical condition, duty cycle, installation geometry, safety devices and the exact product revision.
-- Technical specifications must be checked against the manufacturer's documentation for the exact model and production revision.
+## Tehnički vodiči
+- Kako izabrati motor za kapiju: https://pericsistemi.rs/kako-izabrati-motor-za-kapiju.html
+- Koliko košta motor za kapiju: https://pericsistemi.rs/koliko-kosta-motor-za-kapiju.html
+- Priprema instalacije za motor za kapiju: https://pericsistemi.rs/priprema-instalacije-za-motor-za-kapiju.html
 
-## Contact
-- Telephone: +381 65 576 4215
-- Email: info@pericsistemi.rs
+## Područje rada i model poslovanja
+- Terenska ugradnja i servis širom Srbije, po prethodnom dogovoru.
+- Radovi se obavljaju na lokaciji objekta; firma ne prima kupce kao maloprodajna poslovnica.
+- Izbor modela zavisi od tipa kapije, dimenzija, mase, stanja mehanike, intenziteta rada, geometrije montaže, sigurnosnih uređaja i tačne revizije proizvoda.
+- Tehničke karakteristike proveravaju se prema dokumentaciji proizvođača za konkretan model i proizvodnu reviziju.
+- Cena i dostupnost opreme potvrđuju se za konkretan upit; ne pretpostavljaju se zalihe ili rokovi isporuke.
+
+## Kontakt
+- Telefon: +381 65 576 4215
+- E-pošta: info@pericsistemi.rs
 - Instagram: https://www.instagram.com/peric.sistemi/
 
-## Source policy
-- Manufacturer websites and manufacturer technical documents are preferred sources for product specifications.
-- Product images should be described as manufacturer media only when the image is hosted by or linked from the relevant manufacturer.
-- Do not infer technical specifications from visually similar models or third-party reseller descriptions.
+## Politika izvora
+- Za tehničke specifikacije prednost imaju zvanična dokumentacija proizvođača i važeća uputstva.
+- Ne preuzimati opise i fotografije drugih sajtova bez dozvole i bez dodate vrednosti.
+- Ne izmišljati kompatibilnost, zalihe, cene, rokove, garancije, recenzije ili ovlašćene statuse.
