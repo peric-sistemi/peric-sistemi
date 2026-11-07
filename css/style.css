@@ -1317,3 +1317,12 @@ ol.content-list{list-style:decimal!important;padding-left:24px;margin:14px 0 24p
 .hero-buttons .hero-estimate-link:hover,.hero-buttons .hero-estimate-link:focus-visible{background:#e56900;border-color:#fff;color:#fff;transform:translateY(-2px)}
 .estimate-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 15px;border-radius:50px;background:#ff7a00;color:#fff!important;font-weight:750;font-size:13px;white-space:nowrap}
 .estimate-btn:hover,.estimate-btn:focus-visible{background:#e56900;color:#fff!important;outline:3px solid rgba(255,122,0,.3);outline-offset:2px}
+
+/* Searchable equipment catalogue */
+.catalog-search{margin:24px 0 28px}
+.catalog-search-inner{padding:20px 22px;border:1px solid #e3e6eb;border-radius:14px;background:#f7f8fa;color:#1b2430}
+.catalog-search-inner label{display:block;font-weight:750;margin-bottom:8px;color:#17202b}
+.catalog-search-inner input{width:100%;min-height:48px;border:1px solid #aeb6c2;border-radius:9px;background:#fff;color:#1b2430;padding:12px 14px;font:inherit}
+.catalog-search-inner input:focus{outline:3px solid rgba(242,137,40,.28);border-color:#d76a0b}
+#catalog-search-status,#catalog-search-empty{margin:9px 0 0;color:#475467;font-size:.92rem}
+.catalog-card[hidden],.model-list li[hidden]{display:none!important}
