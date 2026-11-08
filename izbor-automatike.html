@@ -82,44 +82,41 @@ function recommendSliding(){
  if(!kg||kg<1||kg>5000||!len||len<1||len>20){show('sliding-result','Proverite unos','Unesite masu od 1 do 5000 kg i dužinu od 1 do 20 m.');return;}
  if(mech==='hard'){show('sliding-result','Prvo servis mehanike','Kapija koja zapinje ili se teško pomera nije spremna za izbor motora. Najpre proveriti šinu, točkiće, vođenje, temelj i geometriju.');return;}
  const models=[
-  {brand:'FAAC',name:'741 E Z16',kg:900,m:15,duty:'S3 – 40%',note:'230 V; brzina 12 m/min; integrisana 740D; encoder zavisi od verzije.',url:'https://www.faacgroup.com.my/products/family-gates/automations-for-gates/sliding-gates-operators/faac-741-gates/'},
-  {brand:'FAAC',name:'746 ER Z16',kg:600,m:40,duty:'do 70% (prema uslovima)',note:'230 V; brzina 9,6 m/min; uljno-kupatilo; Z16. Potvrditi tačnu varijantu.',url:'https://www.faac.co.uk/sliding/746-er-230v-sliding-gate-operator'},
-  {brand:'FAAC',name:'740 E Z16',kg:500,m:15,duty:'S3 – 30%',note:'Dimenzije odgovaraju, ali radni ciklus je niži; ne tretirati kao automatski izbor za redovno/intenzivno korišćenje.',url:'https://faac.gr/wp-content/uploads/2019/03/741.pdf'},
-  {brand:'Nice',name:'ROAD400 (RD400)',kg:400,m:8,duty:'20 ciklusa/h do 5 m; 16 ciklusa/h za 5–7 m; 14 ciklusa/h za 7–8 m',note:'Rezidencijalni pogon 230 V. Procenat ciklusa se smanjuje prema masi: do 200 kg 100%, 200–300 kg 85%, 300–400 kg 70%. Maksimalno 50 ciklusa/dan prema tehničkom listu.',url:'https://www.niceforyou.com/sites/default/files/upload/manuals/IS0281A00MM.pdf'},{brand:'Nice',name:'ROBO600',kg:600,m:8,duty:'20 ciklusa/h za 6–8 m; 25 za 4–6 m; 40 do 4 m',note:'230 V, 300 W, nominalni moment 9 Nm, vršni potisak 18 Nm. Dozvoljena masa do 600 kg i dužina do 8 m; nije deklarisan za dužinu 12 m.',url:'https://www.niceforyou.com/sites/default/files/upload/manuals/IDV0772A03EN.pdf'},{brand:'Nice',name:'Robus RB1000',kg:1000,m:12,duty:'Do 50 ciklusa/h pri dužini do 4 m; smanjuje se sa dužinom',note:'230 V; deklarisana granica dužine 12 m. Broj ciklusa mora se proveriti za stvarnu dužinu i masu.',url:'https://www.niceforyou.com/sites/default/files/upload/manuals/idv0620a01en.pdf'},
-  {brand:'Nice',name:'RUN1500',kg:1500,m:14,duty:'Zavisi od dužine i mase',note:'Deklarisana opšta granica: 1500 kg i 14 m; proveriti tabelu ciklusa i tačnu verziju.',url:'https://www.niceforyou.com/sites/default/files/upload/manuals/ISTRB2AR01.4865.pdf'}
+  {brand:'FAAC',name:'740 C',kg:500,m:15,duty:'56 ciklusa/h',note:'230 V; 430 W; Z16; IP44. Proveriti stvarno opterećenje i mehaniku.',url:'https://www.faac.biz/products/740-741-gearmotors-230v'},
+  {brand:'FAAC',name:'740 E',kg:500,m:15,duty:'22 ciklusa/h',note:'230 V; 460 W; Z16; IP44. Ne preporučuje se kao intenzivni pogon.',url:'https://www.faac.biz/products/740-741-gearmotors-230v'},
+  {brand:'FAAC',name:'741 C',kg:900,m:15,duty:'56 ciklusa/h',note:'230 V; 530 W; Z16; IP44.',url:'https://www.faac.biz/products/740-741-gearmotors-230v'},
+  {brand:'FAAC',name:'741 E',kg:900,m:15,duty:'30 ciklusa/h',note:'230 V; 600 W; Z16; IP44.',url:'https://www.faac.biz/products/740-741-gearmotors-230v'},
+  {brand:'FAAC',name:'746 C Z16',kg:600,m:40,duty:'Kontinuirani rad',note:'230 V; 350 W; 9,6 m/min; 830 N maksimalna sila; IP44.',url:'https://www.faac.biz/products/746c-844c-gearmotors-230v'},
+  {brand:'FAAC',name:'746 C Z20',kg:400,m:50,duty:'Kontinuirani rad',note:'230 V; 350 W; 12 m/min; 665 N maksimalna sila; IP44.',url:'https://www.faac.biz/products/746c-844c-gearmotors-230v'},
+  {brand:'FAAC',name:'844 C Z16',kg:1800,m:40,duty:'Kontinuirani rad',note:'230 V; 680 W; 9,6 m/min; 1300 N maksimalna sila; IP44.',url:'https://www.faac.biz/products/746c-844c-gearmotors-230v'},
+  {brand:'Nice',name:'ROAD400',kg:400,m:8,duty:'Do 20 ciklusa/h do 5 m; 16 za 5–7 m; 14 za 7–8 m',note:'230 V; ciklusi se dodatno umanjuju prema masi: do 200 kg 100%, 200–300 kg 85%, 300–400 kg 70%.',url:'https://www.niceforyou.com/sites/default/files/upload/manuals/IS0281A00MM.pdf'},
+  {brand:'Nice',name:'ROBO600',kg:600,m:8,duty:'40 ciklusa/h do 4 m; 25 za 4–6 m; 20 za 6–8 m',note:'230 V; 300 W; 9 Nm nominalni moment; 18 Nm vršni moment. Proveriti silu ručnog pomeranja – do 25% maksimalne sile.',url:'https://www.niceforyou.com/sites/default/files/upload/manuals/IDV0772A00SR.pdf'}
  ];
  const eligible=models.filter(x=>kg<=x.kg&&len<=x.m);
  const dutyCaution=cy==='high';
  let body='<p>Unos: <strong>'+kg+' kg</strong>, <strong>'+len+' m</strong>, režim: <strong>'+document.getElementById('s-cycles').selectedOptions[0].text+'</strong>.</p>';
- if(!eligible.length){body+='<p><strong>Nijedan model u trenutno verifikovanom delu baze ne ispunjava istovremeno unetu masu i dužinu.</strong> Potrebna je dodatna provera kataloga i tehničkog lista.</p>';}
+ if(!eligible.length){body+='<p><strong>Nema modela u verifikovanom delu baze koji zadovoljava unetu masu i dužinu.</strong></p>';}
  else{
-  body+='<p>Modeli čije objavljene granice mase i dužine obuhvataju unete vrednosti (ovo još nije potvrda pogodnosti):</p><ul>';
-  eligible.forEach(x=>{body+='<li><strong>'+x.brand+' '+x.name+'</strong> — do '+x.kg+' kg / '+x.m+' m; radni režim: '+x.duty+'. '+x.note+' <a href="'+x.url+'" target="_blank" rel="noopener">Fabrička dokumentacija</a></li>';});
+  body+='<p>Modeli čije fabrički deklarisane granice mase i dužine obuhvataju unos. Ovo je predselekcija, ne konačna potvrda instalacije:</p><ul>';
+  eligible.forEach(x=>{body+='<li><strong>'+x.brand+' '+x.name+'</strong> — do '+x.kg+' kg / '+x.m+' m; radni režim: '+x.duty+'. '+x.note+' <a href="'+x.url+'" target="_blank" rel="noopener">Originalna dokumentacija</a></li>';});
   body+='</ul>';
  }
- if(dutyCaution)body+='<p><strong>Važno:</strong> za intenzivan rad nije dovoljno porediti samo maksimalnu masu i dužinu. Potrebni su ciklusi na sat, uzastopni ciklusi, temperatura i dozvoljeno opterećenje.</p>';
- body+='<p><strong>Obavezno pre konačnog izbora:</strong> izmeriti silu ručnog pomeranja kroz ceo hod, proveriti vetrovno opterećenje, šinu/točkiće, broj ciklusa na sat, napajanje, zupčastu letvu i sigurnosne uređaje.</p><p><strong>Ograničenje baze:</strong> prikazani su samo modeli za koje su u ovom kalkulatoru trenutno uneti proverljivi fabrički podaci. Cardin i ostale FAAC/Nice varijante neću prikazivati kao kompatibilne dok se ne unesu i provere njihove tačne tabele.</p>';
+ if(dutyCaution)body+='<p><strong>Intenzivna upotreba:</strong> prikazani su samo modeli čiji deklarisani ciklus može da se uporedi. Potrebno je proveriti stvaran broj startova, uzastopne cikluse, temperaturu i opterećenje.</p>';
+ body+='<p><strong>Obavezna provera:</strong> izmeriti silu ručnog pomeranja kroz ceo hod; proveriti vetar, šinu, točkiće, zupčastu letvu, napajanje i sigurnosne uređaje.</p><p><strong>Namerno izostavljeni:</strong> Cardin modeli, Nice Robus/Run i ostali FAAC pogoni nisu kandidati dok se ne unesu sve relevantne fabričke tabele za konkretnu reviziju. Kalkulator neće popunjavati nedostajuće vrednosti pretpostavkom.</p>';
  show('sliding-result',eligible.length?'Rezultat poređenja modela':'Nema potvrđenog modela u trenutno proverenoј bazi',body);
 }
 function recommendSwing(){
- const a=Number(document.getElementById('w1').value),b=Number(document.getElementById('w2').value),p=document.getElementById('wpost').value,o=document.getElementById('wopen').value,c=document.getElementById('wcycles').value;
+ const a=Number(document.getElementById('w1').value),b=Number(document.getElementById('w2').value),p=document.getElementById('wpost').value,o=document.getElementById('wopen').value;
  const A=Number(document.getElementById('wa').value),B=Number(document.getElementById('wb').value);
  if(!a||!b||a<.5||b<.5||a>6||b>6){show('swing-result','Proverite dimenzije','Unesite dužinu oba krila između 0,5 i 6 m.');return;}
- let body='<p>Krila: '+a.toFixed(2)+' m i '+b.toFixed(2)+' m. Ciljni ugao: 90°.</p><h4>FAAC Genius G-BAT – montažna geometrija</h4>';
- if(!A||!B){body+='<p>Unesite A i B kote radi poređenja sa tabelom proizvođača. Za otvaranje 90° uputstvo navodi A+B=C. Razlika A i B ne treba da prelazi 40 mm.</p>';}
- else{
-  const rows=[{name:'G-BAT 300 / G-BAT 324',A:145,B:145,C:300,max:3},{name:'G-BAT 400 / G-BAT 424',A:195,B:195,C:400,max:4}];
-  const matches=rows.filter(x=>Math.abs(A-x.A)<=5&&Math.abs(B-x.B)<=5&&Math.max(a,b)<=x.max);
-  if(matches.length)body+='<p><strong>Poklapanje sa standardnim redom 90° iz G-BAT uputstva:</strong></p><ul>'+matches.map(x=>'<li>'+x.name+' — A='+x.A+' mm, B='+x.B+' mm, C='+x.C+' mm; maksimalna dužina krila '+x.max+' m.</li>').join('')+'</ul>';
-  else body+='<p><strong>Nema direktnog poklapanja</strong> sa standardnim G-BAT montažnim redovima za 90°. Potrebna je provera kompletne geometrije i fabričke šeme; ne proglašavamo motor kompatibilnim samo na osnovu približnih kota.</p>';
- }
- body+='<h4>G-BAT modeli u ponudi</h4><ul><li><strong>G-BAT 300 (230 V):</strong> hod 300 mm, krilo do 3 m, S3 30%.</li><li><strong>G-BAT 400 (230 V):</strong> hod 400 mm, krilo do 4 m, S3 30%.</li><li><strong>G-BAT 324 (24 V):</strong> hod 300 mm, krilo do 3 m, intenzivna upotreba prema katalogu.</li><li><strong>G-BAT 424 (24 V):</strong> hod 400 mm, krilo do 4 m, intenzivna upotreba prema katalogu.</li></ul>';
- if(Math.max(a,b)>2.5)body+='<p><strong>Obavezno:</strong> za krila duža od 2,5 m proizvođač navodi potrebu za električnom bravom.</p>';
- body+='<p>Ostali kandidati (Nice Toona, FAAC 400/415 i Key STAR/Turbo S) moraju se proveriti prema sopstvenim montažnim tabelama. G-BAT kote se ne prenose na druge proizvođače.</p>';
- if(p!=='normal')body+='<p>Široki stubovi ili uvučene šarke zahtevaju proveru prostora i eventualne niše.</p>';
+ let body='<p>Krila: '+a.toFixed(2)+' m i '+b.toFixed(2)+' m. Ciljni ugao: 90°.</p>';
+ body+='<p><strong>Automatska potvrda A/B geometrije trenutno je isključena.</strong> Prethodno unete generičke G-BAT A/B vrednosti nisu dovoljne za pouzdano potvrđivanje montaže. Svaki model mora biti proveren prema svojoj originalnoj šemi, tipu nosača, hodu i smeru otvaranja.</p>';
+ if(A>0&&B>0)body+='<p>Primljene kote: A='+A+' mm, B='+B+' mm. Ove vrednosti će biti sačuvane u upitu, ali se neće porediti sa neproverenim univerzalnim pragom.</p>';
+ body+='<p><strong>Modeli koji zahtevaju zasebnu proveru dokumentacije:</strong> FAAC 400/402/412/415/S418, Genius G-BAT 300/400 i 24 V varijante, Nice Toona, Cardin BL/HL i Key STAR. Za svaki model treba učitati njegovu tabelu ili montažni grafikon za 90°.</p>';
+ body+='<p><a href="https://www.faac.biz/products/415-electromechanical-operator-24v-230v" target="_blank" rel="noopener">FAAC 415 – tehnički podaci</a> · <a href="https://www.niceforyou.com/rs/download?t=491" target="_blank" rel="noopener">Nice – zvanična dokumentacija za krilne pogone</a></p>';
+ if(p!=='normal')body+='<p>Široki stubovi ili uvučene šarke zahtevaju proveru raspoloživog prostora i položaja nosača.</p>';
  if(o==='outside')body+='<p>Otvaranje ka ulici zahteva posebnu proveru prostora, bezbednosti i lokalnih uslova.</p>';
- body+='<p><a href="https://www.atecnica.it/file/ist-genius-manuale-istruzioni-genius-g-bat-montaggio-collegamenti-manual-instruction-wiring-installation.pdf" target="_blank" rel="noopener">Uputstvo Genius G-BAT – originalne montažne kote i tehnički podaci</a></p>';
- show('swing-result','Rezultat početne provere kota',body);
+ show('swing-result','Potrebna je provera fabričke šeme',body);
 }
 </script>
 </body></html>
