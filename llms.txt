@@ -25,12 +25,19 @@
 - Nice automatika: https://pericsistemi.rs/nice-automatika.html
 - Nice Robo 600: https://pericsistemi.rs/nice-robo-600.html
 - Nice Robus 800: https://pericsistemi.rs/nice-robus-800.html
+- Nice Spido600: https://pericsistemi.rs/nice-spido600.html
+- Nice S-BAR: https://pericsistemi.rs/nice-sbar.html
 - FAAC automatika: https://pericsistemi.rs/faac-automatika.html
 - FAAC 740: https://pericsistemi.rs/faac-740.html
 - FAAC 741: https://pericsistemi.rs/faac-741.html
+- FAAC B614: https://pericsistemi.rs/faac-b614.html
+- FAAC 615BPR: https://pericsistemi.rs/faac-615bpr.html
+- FAAC 620: https://pericsistemi.rs/faac-620.html
+- FAAC B680H: https://pericsistemi.rs/faac-b680h.html
 - FAAC 746 C i 844 C: https://pericsistemi.rs/faac-746c-844c.html
 - Cardin automatika: https://pericsistemi.rs/cardin-automatika.html
 - Key Automation: https://pericsistemi.rs/key-automation.html
+- Key SUN i TURBO S: https://pericsistemi.rs/key-sun-turbo-s.html
 
 ## Tehnički vodiči
 - Brza procena i zahtev za ponudu: https://pericsistemi.rs/brza-procena.html
