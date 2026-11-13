@@ -35,14 +35,6 @@
       list.appendChild(item);
     }
   }
-  const headerButtons = document.querySelector(".header-buttons");
-  if (headerButtons && !headerButtons.querySelector(".estimate-btn")) {
-    const estimate = document.createElement("a");
-    estimate.href = estimatePath;
-    estimate.className = "estimate-btn";
-    estimate.textContent = "Brza procena";
-    headerButtons.prepend(estimate);
-  }
   if (navToggle && mainNav) {
     navToggle.addEventListener("click", () => {
       const isOpen = mainNav.classList.toggle("mobile-open");
