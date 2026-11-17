@@ -30,6 +30,7 @@
 - FAAC automatika: https://pericsistemi.rs/faac-automatika.html
 - FAAC 740: https://pericsistemi.rs/faac-740.html
 - FAAC 741: https://pericsistemi.rs/faac-741.html
+- FAAC dodatna oprema: https://pericsistemi.rs/faac-dodatna-oprema.html
 - FAAC B614: https://pericsistemi.rs/faac-b614.html
 - FAAC 615BPR: https://pericsistemi.rs/faac-615bpr.html
 - FAAC 620: https://pericsistemi.rs/faac-620.html
@@ -38,6 +39,12 @@
 - Cardin automatika: https://pericsistemi.rs/cardin-automatika.html
 - Key Automation: https://pericsistemi.rs/key-automation.html
 - Key SUN i TURBO S: https://pericsistemi.rs/key-sun-turbo-s.html
+
+## Dodatna oprema i proizvodi
+- FAAC XP 20 D, XP 20B D LC i XP 20W D fotoćelije.
+- FAAC XT2/XT4 FDS i FDS BD daljinski upravljači; RP/RP2 i XR2N/XR4N radio-prijemnici.
+- FAAC 740D, E781S LC, E034 i E721 upravljačke jedinice, uz proveru kompatibilnosti po verziji.
+- FAAC XLED signalna lampa, 12 V električna brava, M4/M6 zupčaste letve, XMBX4 GSM i XWBL Wi-Fi/LAN moduli.
 
 ## Tehnički vodiči
 - Brza procena i zahtev za ponudu: https://pericsistemi.rs/brza-procena.html
