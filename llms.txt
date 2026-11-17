@@ -1,6 +1,6 @@
 # Perić Sistemi
 
-> Perić Sistemi pruža terensku ugradnju i servis automatike za kapije, parking rampe, garažna vrata i prateće elektroinstalacije širom Srbije. Oprema se može zatražiti i bez ugradnje.
+> Perić Sistemi pruža terensku ugradnju i servis automatike za klizne i krilne kapije, parking rampe i prateće elektroinstalacije širom Srbije. Oprema se može zatražiti i bez ugradnje.
 
 ## Glavni sajt
 - https://pericsistemi.rs/
@@ -11,7 +11,6 @@
 - Motori za dvokrilne kapije: https://pericsistemi.rs/motori-za-dvokrilne-kapije.html
 - Servis automatike: https://pericsistemi.rs/servis-automatike.html
 - Automatske parking rampe: https://pericsistemi.rs/automatske-rampe.html
-- Automatika za garažna vrata: https://pericsistemi.rs/garazna-vrata-automatika.html
 - Fotoćelije: https://pericsistemi.rs/fotocelije-za-kapije.html
 - Dodatna oprema: https://pericsistemi.rs/dodatna-oprema-za-kapije.html
 - Daljinski upravljači za kapije: https://pericsistemi.rs/daljinski-upravljaci-za-kapije.html
