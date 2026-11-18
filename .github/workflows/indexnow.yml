@@ -1,0 +1,90 @@
+name: Notify Bing with IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'sitemap.xml'
+      - 'llms.txt'
+      - 'robots.txt'
+      - 'images-sitemap.xml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build URL list
+        id: urls
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${BEFORE:-}" || "${BEFORE}" =~ ^0+$ ]]; then
+            files="$(git ls-files '*.html')"
+          else
+            files="$(git diff --name-only "${BEFORE}" "${AFTER}" -- '*.html')"
+          fi
+
+          urls="$(printf '%s\n' "$files" | sed '/^$/d' | while IFS= read -r file; do
+            if [ "$file" = "index.html" ]; then
+              printf '%s\n' 'https://pericsistemi.rs/'
+            else
+              printf 'https://pericsistemi.rs/%s\n' "$file"
+            fi
+          done | sort -u)"
+
+          sitemap_changed=false
+          if [[ -n "${BEFORE:-}" && ! "${BEFORE}" =~ ^0+$ ]] && git diff --name-only "${BEFORE}" "${AFTER}" -- sitemap.xml | grep -q .; then
+            sitemap_changed=true
+          fi
+          if [ "$sitemap_changed" = true ]; then
+            sitemap_urls="$(sed -n 's:.*<loc>\(https://pericsistemi.rs/[^<]*\)</loc>.*:\1:p' sitemap.xml | sort -u)"
+            urls="$(printf '%s\n%s\n' "$urls" "$sitemap_urls" | sed '/^$/d' | sort -u)"
+          fi
+
+          {
+            echo "urls<<EOF"
+            echo "$urls"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Submit changed URLs to IndexNow
+        if: steps.urls.outputs.urls != ''
+        env:
+          INDEXNOW_KEY: 8a71839b03d791a61834524d5556d160
+          URLS: ${{ steps.urls.outputs.urls }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          urls = [line.strip() for line in os.environ["URLS"].splitlines() if line.strip()]
+          if not urls:
+              raise SystemExit("No URLs to submit")
+          payload = {
+              "host": "pericsistemi.rs",
+              "key": os.environ["INDEXNOW_KEY"],
+              "keyLocation": "https://pericsistemi.rs/" + os.environ["INDEXNOW_KEY"] + ".txt",
+              "urlList": urls[:10000]
+          }
+          request = urllib.request.Request(
+              "https://api.indexnow.org/IndexNow",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST"
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print("IndexNow response:", response.status)
+              if response.status not in (200, 202):
+                  raise SystemExit("IndexNow submission not accepted")
+          print("Submitted", len(payload["urlList"]), "URLs")
+          PY
