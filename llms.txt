@@ -60,7 +60,6 @@
 - Nice automatika: https://pericsistemi.rs/nice-automatika.html
 - Nice Robo 600: https://pericsistemi.rs/nice-robo-600.html
 - Nice Robus 800: https://pericsistemi.rs/nice-robus-800.html
-- Nice Spido600: https://pericsistemi.rs/nice-spido600.html
 - Nice S-BAR: https://pericsistemi.rs/nice-sbar.html
 - FAAC automatika: https://pericsistemi.rs/faac-automatika.html
 - FAAC 740: https://pericsistemi.rs/faac-740.html
@@ -87,6 +86,12 @@
 - Kako izabrati motor za kapiju: https://pericsistemi.rs/kako-izabrati-motor-za-kapiju.html
 - Koliko košta motor za kapiju: https://pericsistemi.rs/koliko-kosta-motor-za-kapiju.html
 - Priprema instalacije za motor za kapiju: https://pericsistemi.rs/priprema-instalacije-za-motor-za-kapiju.html
+
+## Tehnički vodiči i instalaciona priprema
+- Priprema kablova za motor kapije pre betoniranja: https://pericsistemi.rs/priprema-instalacije-za-motor-za-kapiju.html
+- Vodič prikazuje FAAC tipske instalacione primere iz PRICE BOOK 2026 EN REV2 za 740 C, 740 E, 741 C, 741 E, C720, C721, 746 C i 844 C.
+- Preseci iz FAAC primera nisu univerzalna šema; pre izvođenja proveriti tačno uputstvo, centralu, dužinu trase, zaštitu i važeće propise.
+- Perić Sistemi trenutno ne nudi ugradnju niti servis automatike za garažna vrata.
 
 ## Područje rada i model poslovanja
 - Terenska ugradnja i servis širom Srbije, po prethodnom dogovoru.
