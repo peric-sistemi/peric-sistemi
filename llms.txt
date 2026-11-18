@@ -42,18 +42,19 @@
 
 ## Ostala područja terenskog rada u Srbiji
 - Braničevo i Podunavlje: https://pericsistemi.rs/branicevo-podunavlje.html
-  - Gradovi i mesta: Kostolac, Požarevac, Smederevo, Veliko Gradište, Golubac, Kučevo, Petrovac na Mlavi, Žagubica, Kovin, Smederevska Palanka, Velika Plana
+  - Gradovi i mesta: [Kostolac](https://pericsistemi.rs/branicevo-podunavlje.html#grad-kostolac), [Požarevac](https://pericsistemi.rs/branicevo-podunavlje.html#grad-pozarevac), [Smederevo](https://pericsistemi.rs/branicevo-podunavlje.html#grad-smederevo), [Veliko Gradište](https://pericsistemi.rs/branicevo-podunavlje.html#grad-veliko-gradiste), [Golubac](https://pericsistemi.rs/branicevo-podunavlje.html#grad-golubac), [Kučevo](https://pericsistemi.rs/branicevo-podunavlje.html#grad-kucevo), [Petrovac na Mlavi](https://pericsistemi.rs/branicevo-podunavlje.html#grad-petrovac-na-mlavi), [Žagubica](https://pericsistemi.rs/branicevo-podunavlje.html#grad-zagubica), [Kovin](https://pericsistemi.rs/branicevo-podunavlje.html#grad-kovin), [Smederevska Palanka](https://pericsistemi.rs/branicevo-podunavlje.html#grad-smederevska-palanka), [Velika Plana](https://pericsistemi.rs/branicevo-podunavlje.html#grad-velika-plana)
 - Šumadija i Pomoravlje: https://pericsistemi.rs/sumadija-pomoravlje.html
-  - Gradovi: Aranđelovac, Kragujevac, Jagodina, Ćuprija, Paraćin
+  - Gradovi i mesta: [Aranđelovac](https://pericsistemi.rs/sumadija-pomoravlje.html#grad-arandjelovac), [Kragujevac](https://pericsistemi.rs/sumadija-pomoravlje.html#grad-kragujevac), [Jagodina](https://pericsistemi.rs/sumadija-pomoravlje.html#grad-jagodina), [Ćuprija](https://pericsistemi.rs/sumadija-pomoravlje.html#grad-cuprija), [Paraćin](https://pericsistemi.rs/sumadija-pomoravlje.html#grad-paracin)
 - Istočna Srbija: https://pericsistemi.rs/istocna-srbija.html
-  - Gradovi: Bor, Zaječar, Negotin
+  - Gradovi i mesta: [Bor](https://pericsistemi.rs/istocna-srbija.html#grad-bor), [Zaječar](https://pericsistemi.rs/istocna-srbija.html#grad-zajecar), [Negotin](https://pericsistemi.rs/istocna-srbija.html#grad-negotin)
 - Zapadna i centralna Srbija: https://pericsistemi.rs/zapadna-centralna-srbija.html
-  - Gradovi: Valjevo, Šabac, Čačak, Kraljevo, Kruševac, Vrnjačka Banja
+  - Gradovi i mesta: [Valjevo](https://pericsistemi.rs/zapadna-centralna-srbija.html#grad-valjevo), [Šabac](https://pericsistemi.rs/zapadna-centralna-srbija.html#grad-sabac), [Čačak](https://pericsistemi.rs/zapadna-centralna-srbija.html#grad-cacak), [Kraljevo](https://pericsistemi.rs/zapadna-centralna-srbija.html#grad-kraljevo), [Kruševac](https://pericsistemi.rs/zapadna-centralna-srbija.html#grad-krusevac), [Vrnjačka Banja](https://pericsistemi.rs/zapadna-centralna-srbija.html#grad-vrnjacka-banja)
 - Vojvodina: https://pericsistemi.rs/vojvodina.html
-  - Gradovi i mesta: Pančevo, Novi Sad, Petrovaradin, Sremski Karlovci, Ruma, Sremska Mitrovica, Inđija, Stara Pazova, Vršac, Bela Crkva, Zrenjanin, Kikinda, Subotica, Sombor
+  - Gradovi i mesta: [Pančevo](https://pericsistemi.rs/vojvodina.html#grad-pancevo), [Novi Sad](https://pericsistemi.rs/vojvodina.html#grad-novi-sad), [Petrovaradin](https://pericsistemi.rs/vojvodina.html#grad-petrovaradin), [Sremski Karlovci](https://pericsistemi.rs/vojvodina.html#grad-sremski-karlovci), [Ruma](https://pericsistemi.rs/vojvodina.html#grad-ruma), [Sremska Mitrovica](https://pericsistemi.rs/vojvodina.html#grad-sremska-mitrovica), [Inđija](https://pericsistemi.rs/vojvodina.html#grad-indjija), [Stara Pazova](https://pericsistemi.rs/vojvodina.html#grad-stara-pazova), [Vršac](https://pericsistemi.rs/vojvodina.html#grad-vrsac), [Bela Crkva](https://pericsistemi.rs/vojvodina.html#grad-bela-crkva), [Zrenjanin](https://pericsistemi.rs/vojvodina.html#grad-zrenjanin), [Kikinda](https://pericsistemi.rs/vojvodina.html#grad-kikinda), [Subotica](https://pericsistemi.rs/vojvodina.html#grad-subotica), [Sombor](https://pericsistemi.rs/vojvodina.html#grad-sombor)
 - Udaljenije lokacije – Niš i Užice: https://pericsistemi.rs/udaljene-lokacije-nis-uzice.html
-  - Gradovi: Niš, Užice
-- Ova podela je orijentaciona za terenski rad, a ne zvanična administrativna podela. Firma posluje iz Kostolca; dolazak, raspoloživost i eventualni putni trošak potvrđuju se unapred.
+  - Gradovi i mesta: [Niš](https://pericsistemi.rs/udaljene-lokacije-nis-uzice.html#grad-nis), [Užice](https://pericsistemi.rs/udaljene-lokacije-nis-uzice.html#grad-uzice)
+- Ova podela je orijentaciona za organizaciju terenskog rada, a ne zvanična administrativna podela. Firma posluje iz Kostolca; dolazak, raspoloživost i eventualni putni trošak potvrđuju se unapred.
+
 
 ## Proizvođači i modeli
 - Nice automatika: https://pericsistemi.rs/nice-automatika.html
