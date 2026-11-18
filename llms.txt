@@ -70,6 +70,8 @@
 - FAAC 620: https://pericsistemi.rs/faac-620.html
 - FAAC B680H: https://pericsistemi.rs/faac-b680h.html
 - FAAC 746 C i 844 C: https://pericsistemi.rs/faac-746c-844c.html
+- FAAC C720 i C721 24 V – poređenje i tehnički podaci: https://pericsistemi.rs/faac-c720-c721.html
+- FAAC 392 C – zglobni pogon za krilne kapije, konfiguracija 392 C + 392: https://pericsistemi.rs/faac-392-c.html
 - Cardin automatika: https://pericsistemi.rs/cardin-automatika.html
 - Key Automation: https://pericsistemi.rs/key-automation.html
 - Key SUN i TURBO S: https://pericsistemi.rs/key-sun-turbo-s.html
@@ -89,7 +91,8 @@
 
 ## Tehnički vodiči i instalaciona priprema
 - Priprema kablova za motor kapije pre betoniranja: https://pericsistemi.rs/priprema-instalacije-za-motor-za-kapiju.html
-- Vodič prikazuje FAAC tipske instalacione primere iz PRICE BOOK 2026 EN REV2 za 740 C, 740 E, 741 C, 741 E, C720, C721, 746 C i 844 C.
+  - Dodat je FAAC tipski primer 392 C + 392 za krilnu kapiju, prema štampanoj strani 285 u PRICE BOOK 2026 EN REV2.
+- Vodič prikazuje FAAC tipske instalacione primere iz PRICE BOOK 2026 EN REV2 za 740 C, 741 E, 741 C, C720, C721, 746 C i 844 C. Dijagrami 740 E, C721 i 844 3PH u izvoru imaju neusaglašenosti i nisu predstavljeni kao potvrđene univerzalne šeme.
 - Preseci iz FAAC primera nisu univerzalna šema; pre izvođenja proveriti tačno uputstvo, centralu, dužinu trase, zaštitu i važeće propise.
 - Perić Sistemi trenutno ne nudi ugradnju niti servis automatike za garažna vrata.
 
