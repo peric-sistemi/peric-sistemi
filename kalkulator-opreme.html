@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalkulator opreme za kapije, garažna vrata i parking rampe | Perić Sistemi</title>
+<meta name="description" content="Interaktivni kalkulator za početni izbor Nice, FAAC, Cardin i Key automatike za kapije, garažna vrata i parking rampe. Unesite mere i intenzitet rada.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://pericsistemi.rs/kalkulator-opreme.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Perić Sistemi">
+<meta property="og:title" content="Kalkulator opreme za kapije i parking rampe | Perić Sistemi">
+<meta property="og:description" content="Pronađite uži izbor automatike prema tipu kapije, dimenzijama, masi i intenzitetu korišćenja.">
+<meta property="og:url" content="https://pericsistemi.rs/kalkulator-opreme.html">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.calc-wrap{max-width:1050px;margin:auto}.calc-intro{max-width:850px}.calc-panel{background:#151d28;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:clamp(18px,3vw,30px);margin:24px 0;color:#f4f6f8}
+.calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.calc-field{display:flex;flex-direction:column;gap:7px}.calc-field.full{grid-column:1/-1}
+.calc-field label{font-weight:650;color:#fff}.calc-field small{color:#c5ced8;font-size:.82rem;line-height:1.45}
+.calc-field input,.calc-field select{width:100%;min-height:48px;padding:12px 13px;border-radius:9px;border:1px solid #596273;background:#0d1117;color:#fff;font:inherit}
+.calc-field input:focus,.calc-field select:focus{outline:3px solid rgba(255,122,0,.3);border-color:#ff8a1c}
+.calc-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.calc-btn{border:0;border-radius:999px;padding:13px 22px;min-height:48px;font:inherit;font-weight:750;cursor:pointer;background:#f28c28;color:#171717}.calc-btn.secondary{background:#fff;color:#202833}
+.calc-results{display:none;margin:26px 0}.calc-results.show{display:block}.result-card{background:#fff;border:1px solid #e5e7eb;border-radius:15px;padding:20px;margin:14px 0;color:#20242a}.result-card h3{margin:0 0 8px;color:#111}.result-card p,.result-card li{color:#404852;line-height:1.6}.result-tag{display:inline-block;padding:5px 9px;border-radius:30px;background:#fff2e5;color:#8b4300;font-size:.78rem;font-weight:700;margin:0 5px 7px 0}.result-list{padding-left:20px}.result-model{border-top:1px solid #e7e9ec;padding-top:13px;margin-top:13px}.result-model:first-of-type{border-top:0}.result-model a{color:#b75b00;font-weight:700}.calc-warning{padding:14px 16px;border-left:4px solid #d98b2b;background:#fff8ef;border-radius:8px;color:#4c3a24;line-height:1.6;margin:16px 0}.calc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.calc-step{background:#f3f5f7;border-radius:10px;padding:12px;color:#29323b;font-size:.84rem}.calc-step strong{display:block;color:#111;margin-bottom:4px}.calc-faq{margin-top:30px}.calc-faq details{background:#fff;border:1px solid #e4e7eb;border-radius:10px;padding:14px 16px;margin:10px 0;color:#242a31}.calc-faq summary{font-weight:700;cursor:pointer}.calc-faq p{color:#4a535d;line-height:1.6}
+@media(max-width:680px){.calc-grid{grid-template-columns:1fr}.calc-field.full{grid-column:auto}.calc-steps{grid-template-columns:repeat(2,1fr)}.calc-actions{display:grid}.calc-btn{width:100%}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Kalkulator opreme za kapije, garažna vrata i parking rampe","url":"https://pericsistemi.rs/kalkulator-opreme.html","description":"Interaktivni početni izbor automatike prema tipu sistema, dimenzijama, masi i intenzitetu rada.","isPartOf":{"@type":"WebSite","url":"https://pericsistemi.rs/"},"inLanguage":"sr-Latn"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Početna","item":"https://pericsistemi.rs/"},{"@type":"ListItem","position":2,"name":"Oprema","item":"https://pericsistemi.rs/oprema.html"},{"@type":"ListItem","position":3,"name":"Kalkulator opreme","item":"https://pericsistemi.rs/kalkulator-opreme.html"}]}
+</script>
+</head>
+<body>
+<header><div class="container">
+<a href="/" class="logo" aria-label="Perić Sistemi – početna"><img src="/images/logo.webp" alt="Perić Sistemi – automatika za kapije i elektroinstalacije" width="220" height="70"></a>
+<button class="nav-toggle" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+<nav id="main-nav" aria-label="Glavna navigacija"><ul><li><a href="/">Početna</a></li><li><a href="/usluge.html">Usluge</a></li><li><a href="/oprema.html">Oprema</a></li><li><a href="/vodici-za-automatiku-kapija.html">Vodiči</a></li><li><a href="/galerija.html">Radovi</a></li><li><a href="/gradovi-ugradnja-motora-za-kapije.html">Područje rada</a></li><li><a href="/o-nama.html">O nama</a></li><li><a href="/kontakt.html">Kontakt</a></li></ul></nav>
+<div class="header-buttons"><a href="tel:+381655764215" class="call-btn">Pozovi</a><a href="https://wa.me/381655764215" target="_blank" rel="noopener" class="whatsapp-btn">WhatsApp</a></div>
+</div></header>
+<main><section class="content-page"><div class="container calc-wrap">
+<nav class="breadcrumbs" aria-label="Putanja"><a href="/">Početna</a><span>›</span><a href="/oprema.html">Oprema</a><span>›</span><span>Kalkulator opreme</span></nav>
+<p class="eyebrow">PERIĆ SISTEMI • VODIČ ZA IZBOR</p>
+<h1>Kalkulator opreme za kapije, garažna vrata i parking rampe</h1>
+<p class="lead calc-intro">Unesite osnovne dimenzije i način korišćenja. Kalkulator će suziti izbor na modele iz ponude Nice, FAAC, Cardin i Key Automation i prikazati dodatnu opremu koju treba razmotriti.</p>
+<p class="calc-warning"><strong>Važno:</strong> ovo je informativni predizbor, a ne automatska potvrda da je motor odgovarajući. Konačan izbor zahteva proveru mehanike, geometrije, nagiba, vetra, temelja, napajanja, radnog ciklusa i tačne verzije proizvoda prema uputstvu proizvođača.</p>
+<div class="calc-steps"><div class="calc-step"><strong>1. Izaberite sistem</strong>Kapija, rampa ili garažna vrata</div><div class="calc-step"><strong>2. Unesite mere</strong>Širina, masa ili površina</div><div class="calc-step"><strong>3. Opišite rad</strong>Učestalost i brend</div><div class="calc-step"><strong>4. Dobijte predizbor</strong>Modeli i dodatna oprema</div></div>
+<form id="equipment-calculator" class="calc-panel">
+<div class="calc-grid">
+<div class="calc-field full"><label for="system">Šta želite da automatizujete?</label><select id="system" required><option value="sliding">Klizna kapija</option><option value="swing">Jednokrilna / dvokrilna kapija</option><option value="barrier">Automatska parking rampa</option><option value="garage">Garažna vrata</option></select></div>
+<div class="calc-field"><label for="brand">Željeni proizvođač</label><select id="brand"><option value="all">Nije važno – uporedi sve</option><option value="Nice">Nice</option><option value="FAAC">FAAC</option><option value="Cardin">Cardin</option><option value="Key">Key Automation</option></select><small>Ako izaberete brend, prikazaće se modeli tog proizvođača gde postoje proverljivi podaci.</small></div>
+<div class="calc-field"><label for="usage">Intenzitet korišćenja</label><select id="usage"><option value="home">Privatna kuća – povremeno</option><option value="medium">Stambena zgrada / manji poslovni objekat</option><option value="high">Čest rad / poslovni objekat</option><option value="veryhigh">Vrlo intenzivan / industrijski rad</option></select></div>
+<div class="calc-field" id="width-field"><label for="width" id="width-label">Dužina kapije (m)</label><input id="width" type="number" min="0.5" max="100" step="0.1" placeholder="Npr. 4.5"><small id="width-help">Unesite približnu dužinu klizne kapije.</small></div>
+<div class="calc-field" id="weight-field"><label for="weight" id="weight-label">Masa kapije (kg)</label><input id="weight" type="number" min="1" max="100000" step="1" placeholder="Npr. 350"><small id="weight-help">Ako ne znate masu, ostavite prazno i tražite ručnu procenu.</small></div>
+<div class="calc-field" id="leaf-field" hidden><label for="leaves">Broj krila</label><select id="leaves"><option value="1">Jednokrilna</option><option value="2" selected>Dvokrilna</option></select></div>
+<div class="calc-field" id="leafwidth-field" hidden><label for="leafwidth">Širina jednog krila (m)</label><input id="leafwidth" type="number" min="0.5" max="10" step="0.1" placeholder="Npr. 2.0"><small>Za dvokrilnu kapiju unesite širinu jednog krila.</small></div>
+<div class="calc-field" id="leafweight-field" hidden><label for="leafweight">Masa jednog krila (kg)</label><input id="leafweight" type="number" min="1" max="10000" step="1" placeholder="Npr. 150"><small>Za dvokrilnu kapiju unesite masu jednog krila, ne zbirnu masu.</small></div>
+<div class="calc-field" id="area-field" hidden><label for="area">Površina garažnih vrata (m²)</label><input id="area" type="number" min="1" max="100" step="0.1" placeholder="Npr. 10.5"></div>
+<div class="calc-field" id="barrier-width-field" hidden><label for="barrierwidth">Širina svetlog prolaza (m)</label><input id="barrierwidth" type="number" min="1" max="20" step="0.1" placeholder="Npr. 5.5"></div>
+<div class="calc-field" id="hourly-field" hidden><label for="hourly">Očekivani broj prolazaka u najopterećenijem satu</label><input id="hourly" type="number" min="1" max="3000" step="1" placeholder="Npr. 40"><small>Za parking rampe je vršno opterećenje po satu važnije od dnevnog proseka.</small></div>
+<div class="calc-field"><label for="daily">Procenjeni broj ciklusa dnevno</label><select id="daily"><option value="unknown">Ne znam</option><option value="10">Do 10</option><option value="30">10–30</option><option value="60">30–60</option><option value="100">60–100</option><option value="200">100–200</option><option value="500">Više od 200</option></select></div>
+<div class="calc-field"><label for="control">Način upravljanja</label><select id="control"><option value="remote">Daljinski upravljači</option><option value="gsm">GSM / poziv sa telefona</option><option value="card">Kartice / tagovi / šifra</option><option value="loop">Automatska detekcija vozila</option><option value="mixed">Kombinacija više načina</option></select></div>
+<div class="calc-field full"><label for="location">Grad ili mesto objekta *</label><input id="location" type="text" maxlength="80" required placeholder="Npr. Kostolac, Požarevac, Beograd"></div>
+<div class="calc-field full"><label for="notes">Dodatne informacije (opciono)</label><input id="notes" type="text" maxlength="300" placeholder="Npr. kapija je na blagom usponu, parking je za stanare..."></div>
+</div>
+<div class="calc-actions"><button class="calc-btn" type="submit">Prikaži preporučenu opremu</button><button class="calc-btn secondary" type="reset" id="reset-calc">Poništi unos</button></div>
+</form>
+<section id="calc-results" class="calc-results" aria-live="polite">
+<h2>Rezultat početnog izbora</h2><div id="result-summary"></div><div id="result-models"></div><div id="result-accessories"></div>
+<div class="calc-actions"><button class="calc-btn" id="send-whatsapp" type="button">Pošalji rezultate preko WhatsApp-a</button><a class="calc-btn secondary" href="tel:+381655764215">Pozovi 065 576 4215</a></div>
+</section>
+<section class="calc-faq"><h2>Kako radi kalkulator?</h2>
+<details><summary>Da li je prikazani motor sigurno odgovarajući?</summary><p>Ne. Kalkulator poredi unete osnovne podatke sa odabranim deklarisanim granicama modela i daje uži izbor. Preporuka postaje konačna tek posle provere kapije, mehanike, položaja motora, opterećenja i proizvođačkog uputstva.</p></details>
+<details><summary>Šta ako ne znam masu kapije?</summary><p>Nemojte nagađati. Pošaljite fotografije i dimenzije putem WhatsApp-a. Bez mase i provere mehanike rezultat može biti samo orijentacioni.</p></details>
+<details><summary>Zašto kalkulator traži broj prolazaka na sat kod rampe?</summary><p>Parking rampa se bira prema dužini kraka, brzini, dozvoljenom radnom ciklusu i vršnom broju otvaranja. Dnevni zbir sam po sebi nije dovoljan za dimenzionisanje.</p></details>
+<details><summary>Da li su uključeni daljinski, fotoćelije i GSM moduli?</summary><p>Kalkulator ih prikazuje kao dodatne komponente koje treba razmotriti. Tačna kompatibilnost zavisi od centrale, radio-protokola, modela i projekta.</p></details>
+</section>
+<div class="cta-box"><h2>Želite proveru pre kupovine ili ugradnje?</h2><p>Pošaljite fotografije kapije ili ulaza, dimenzije i rezultat kalkulatora. Perić Sistemi proverava konfiguraciju i priprema ponudu za opremu i ugradnju širom Srbije.</p><a href="https://wa.me/381655764215" target="_blank" rel="noopener" class="whatsapp-btn">Kontakt putem WhatsApp-a</a><a href="/oprema.html" class="call-btn">Pogledajte kompletnu opremu</a></div>
+</div></section></main>
+<footer><div class="container footer"><div><img src="/images/logo.webp" class="footer-logo" alt="PERIĆ SISTEMI"><p><strong>PERIĆ SISTEMI</strong><br>Automatika za kapije, garažna vrata i parking rampe</p></div><div><h3>Kontakt</h3><p>065 576 4215</p><p><a href="mailto:info@pericsistemi.rs">info@pericsistemi.rs</a></p></div><div><h3>Povezano</h3><p><a href="/oprema.html">Katalog opreme</a></p><p><a href="/automatske-rampe.html">Parking rampe</a></p><p><a href="/brza-procena.html">Brza procena</a></p></div></div><p style="text-align:center;margin:12px 0"><a href="/politika-privatnosti.html">Politika privatnosti</a></p><div class="copyright">© 2026 Perić Sistemi. Sva prava zadržana.</div></footer>
+<script src="js/script.js"></script>
+<script>
+(function(){
+const form=document.getElementById('equipment-calculator');
+const system=document.getElementById('system');
+const result=document.getElementById('calc-results');
+let lastMessage='';
+const $=id=>document.getElementById(id);
+function show(id,yes){$(id).hidden=!yes;}
+function configure(){
+ const s=system.value;
+ show('width-field',s==='sliding');show('weight-field',s==='sliding');
+ show('leaf-field',s==='swing');show('leafwidth-field',s==='swing');show('leafweight-field',s==='swing');
+ show('area-field',s==='garage');show('barrier-width-field',s==='barrier');show('hourly-field',s==='barrier');
+ $('width-label').textContent=s==='sliding'?'Dužina kapije (m)':'Dužina';
+ $('width-help').textContent='Unesite ukupnu dužinu klizne kapije, ne samo širinu prolaza.';
+}
+system.addEventListener('change',configure);configure();
+const sliding=[
+ {brand:'Nice',name:'Robus RBS400 (2025)',max:400,len:8,url:'nice-automatika.html',note:'24 V DC; deklarisana klasa do 400 kg i do 8 m. Proveriti kombinaciju mase, dužine i broja ciklusa.'},
+ {brand:'Nice',name:'Robus RBS600 (2025)',max:600,len:8,url:'nice-automatika.html',note:'24 V DC; deklarisana klasa do 600 kg i do 8 m. Proveriti intenzitet i uslove mehanike.'},
+ {brand:'Nice',name:'Robus 800 (RBS800)',max:800,len:null,url:'nice-robus-800.html',note:'Do 800 kg prema navedenoj klasi modela; proveriti tačnu izvedbu i ciklus.'},
+ {brand:'Nice',name:'Robo 600 (RO600)',max:600,len:null,url:'nice-robo-600.html',note:'230 V; do 600 kg prema katalogu. Proveriti dužinu kapije i intenzitet rada.'},
+ {brand:'Nice',name:'Road / RoadKit',max:400,len:null,url:'nice-road-400.html',note:'Porodica za klizne kapije do približno 400 kg u dokumentovanim izvedbama; potvrditi punu oznaku kompleta.'},
+ {brand:'FAAC',name:'740 C / 740 E',max:500,len:15,url:'faac-740.html',note:'230 V; do 500 kg i do 15 m. C i E verzije imaju različit radni ciklus.'},
+ {brand:'FAAC',name:'741 C / 741 E',max:900,len:15,url:'faac-741.html',note:'230 V; do 900 kg i do 15 m. C i E verzije imaju različit radni ciklus.'},
+ {brand:'FAAC',name:'C720',max:400,len:15,url:'faac-c720-c721.html#c720',note:'24 V motor; do 400 kg, 15 m; deklarisan 100% radni ciklus.'},
+ {brand:'FAAC',name:'C721',max:800,len:15,url:'faac-c720-c721.html#c721',note:'24 V motor; do 800 kg, 15 m; deklarisan 100% radni ciklus.'},
+ {brand:'FAAC',name:'844 C',max:1800,len:40,url:'faac-746c-844c.html',note:'230 V; do 1.800 kg i do 40 m prema konfiguraciji.'},
+ {brand:'Cardin',name:'SL524',max:500,len:null,url:'cardin-sl524.html',note:'24 V; do 500 kg prema proizvođačkoj tabeli. Proveriti tačnu izvedbu i intenzitet.'},
+ {brand:'Cardin',name:'SLX824 / SLX824CB',max:800,len:null,url:'cardin-slx824.html',note:'24 V; do 800 kg prema proizvođačkoj tabeli. Proveriti tačnu izvedbu.'},
+ {brand:'Cardin',name:'SLX1524 / SLX1524CB',max:1500,len:null,url:'cardin-slx1524.html',note:'24 V; do 1.500 kg prema proizvođačkoj tabeli. Proveriti tačnu izvedbu.'},
+ {brand:'Key',name:'TURBO S',max:400,len:null,url:'oprema.html',note:'Key Automation; do 400 kg prema ponudi. Proveriti tačnu verziju, napajanje i ciklus.'}
+];
+const swing=[
+ {brand:'FAAC',name:'392 C',maxWidth:2.5,lock:true,url:'faac-392-c.html',note:'24 V zglobni pogon; krilo do 2,5 m uz odgovarajuću električnu bravu. Geometrija stubova je presudna.'},
+ {brand:'FAAC',name:'415 24 V',maxWidth:2.5,lock:true,url:'faac-automatika.html',note:'24 V linearni pogon; do 2,5 m po krilu, do 3 m uz električnu bravu.'},
+ {brand:'FAAC',name:'415 L 24 V',maxWidth:3,lock:true,url:'faac-automatika.html',note:'Duža izvedba; do 3 m po krilu, do 4 m uz električnu bravu.'},
+ {brand:'Nice',name:'Toona TO4024',maxWidth:3,lock:null,url:'nice-toona.html',note:'Nice linearna automatika za krilne kapije. Potrebna provera mase, širine krila i geometrije prema tačnom uputstvu.'}
+];
+const barriers=[
+ {brand:'FAAC',name:'B614',maxWidth:6,url:'faac-b614.html',note:'24 V DC; do 6 m; kontinuirana upotreba. Brzina zavisi od dužine kraka i konfiguracije.'},
+ {brand:'FAAC',name:'615BPR Standard',maxWidth:5,url:'faac-615bpr.html',note:'Do 5 m; radni ciklus 50%. Proveriti broj otvaranja i vreme hlađenja.'},
+ {brand:'FAAC',name:'615BPR Rapid',maxWidth:2.5,url:'faac-615bpr.html',note:'Do 2,5 m; brža konfiguracija, radni ciklus 40%.'},
+ {brand:'FAAC',name:'620 Standard',maxWidth:5,url:'faac-620.html',note:'Do 5 m; radni ciklus 70%.'},
+ {brand:'FAAC',name:'620 Rapid',maxWidth:3.8,url:'faac-620.html',note:'Do 3,8 m; radni ciklus 100% prema tabeli na sajtu.'},
+ {brand:'FAAC',name:'B680H',maxWidth:8,url:'faac-b680h.html',note:'Hibridna rampa; konfiguracije kraka 2–8 m; kontinuirana upotreba.'},
+ {brand:'Nice',name:'S4BAR / S4BARI',maxWidth:4,url:'nice-rampe.html',note:'24 V; do 4 m; proizvođač navodi do 100 ciklusa na sat pri nominalnom momentu.'},
+ {brand:'Nice',name:'M3BAR',maxWidth:3,url:'nice-rampe.html',note:'M-BAR porodica; konfiguracija kraka 3 m. Proveriti balans i radni režim.'},
+ {brand:'Nice',name:'M5BAR',maxWidth:5,url:'nice-rampe.html',note:'M-BAR porodica; konfiguracija kraka 4 ili 5 m.'},
+ {brand:'Nice',name:'M7BAR',maxWidth:7,url:'nice-rampe.html',note:'M-BAR porodica; konfiguracija kraka 5–7 m.'},
+ {brand:'Nice',name:'L9BAR',maxWidth:9,url:'nice-rampe.html',note:'L-BAR; konfiguracije 7–9 m. Posebno proveriti vetar, oslonac i temeljenje.'}
+];
+const garage=[
+ {brand:'Nice',name:'Spido 600',maxArea:9.6,url:'motori-za-garazna-vrata.html',note:'600 N; katalog navodi do 9,6 m² za segmentna i do 10,5 m² za podizna vrata.'},
+ {brand:'Nice',name:'Spider 800',maxArea:11.4,url:'motori-za-garazna-vrata.html',note:'800 N; katalog navodi do 11,4 m² za segmentna i do 12,6 m² za podizna vrata.'},
+ {brand:'Nice',name:'Spider 1200BLW',maxArea:16.9,url:'motori-za-garazna-vrata.html',note:'1.200 N brushless; katalog navodi do 16,9 m² za segmentna i do 19,5 m² za podizna vrata.'}
+];
+function escapeHtml(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function linkModel(m){return '<div class="result-model"><h3>'+escapeHtml(m.brand+' '+m.name)+'</h3><p>'+escapeHtml(m.note)+'</p><p><a href="'+m.url+'">Detalji i dokumentacija modela →</a></p></div>';}
+function accessoryList(s,control,usage){
+ let a=[];
+ if(s==='sliding'||s==='swing'){a=['Fotoćelije – bezbednosna zaštita prolaza (broj i položaj prema projektu)','Signalna lampa – upozorenje tokom kretanja kapije','Daljinski upravljači i odgovarajući radio-prijemnik','Mehanički graničnici i električna brava ako ih zahteva sistem'];}
+ if(s==='barrier'){a=['Fotoćelije ili druga bezbednosna detekcija prema projektu','Signalna lampa ili semafor za regulaciju prolaza','Detektor vozila / induktivna petlja kada je potrebna automatska detekcija','Oslonac i zaštitni profil kraka prema dužini i konfiguraciji'];}
+ if(s==='garage'){a=['Odgovarajuća vodilica i prenosni komplet za konkretna vrata','Fotoćelije ili sigurnosna ivica, ako su kompatibilne i potrebne','Daljinski upravljači i radio-prijemnik prema kompletu'];}
+ if(control==='gsm')a.push('GSM modul – proveriti kompatibilnost sa centralom i načinom upravljanja');
+ if(control==='card')a.push('Čitač kartica / tagova i kontroler pristupa – proveriti kompatibilnost');
+ if(control==='loop')a.push('Induktivna petlja i detektor vozila – planirati presecanje i trasu kabla');
+ if(control==='mixed')a.push('Integracija više načina kontrole pristupa – proveriti ulaze centrale i potreban kontroler');
+ if(usage==='high'||usage==='veryhigh')a.push('Rezervno napajanje ili UPS ako je potrebno za kontinuitet rada; proveriti podršku konkretnog sistema');
+ return a;
+}
+form.addEventListener('submit',function(e){
+ e.preventDefault();
+ const s=$('system').value,b=$('brand').value,usage=$('usage').value,control=$('control').value,loc=$('location').value.trim();
+ let pool=[],valid=true,details=[],heading='';
+ if(s==='sliding'){
+  const w=Number($('width').value),kg=Number($('weight').value);
+  if(!w||!kg){valid=false;alert('Za početni izbor klizne kapije unesite dužinu i približnu masu. Ako masa nije poznata, pošaljite fotografije za ručnu procenu.');return;}
+  pool=sliding.filter(m=>(b==='all'||m.brand===b)&&kg<=m.max&&(!m.len||w<=m.len));
+  heading='Klizna kapija';details=['Dužina kapije: '+w+' m','Približna masa: '+kg+' kg'];
+  if(usage==='veryhigh')pool=pool.filter(m=>['FAAC'].includes(m.brand)||m.name.includes('RBS')||m.name.includes('SLX'));
+ } else if(s==='swing'){
+  const n=Number($('leaves').value),w=Number($('leafwidth').value),kg=Number($('leafweight').value);
+  if(!w||!kg){alert('Unesite širinu i približnu masu jednog krila.');return;}
+  pool=swing.filter(m=>(b==='all'||m.brand===b)&&w<=m.maxWidth);
+  heading=n===2?'Dvokrilna kapija':'Jednokrilna kapija';details=['Broj krila: '+n,'Širina jednog krila: '+w+' m','Masa jednog krila: '+kg+' kg'];
+  if(b==='Cardin'||b==='Key'){pool=[];details.push('Za izabrani brend potrebna je ručna provera tačnog modela i fabričkog grafikona.');}
+  if(b==='Nice'&&kg>250){pool=[];details.push('Za Nice Toona je potrebna ručna provera mase prema tačnoj izvedbi i geometriji.');}
+ } else if(s==='barrier'){
+  const w=Number($('barrierwidth').value),h=$('hourly').value?Number($('hourly').value):null;
+  if(!w){alert('Unesite širinu svetlog prolaza.');return;}
+  pool=barriers.filter(m=>(b==='all'||m.brand===b)&&w<=m.maxWidth);
+  heading='Automatska parking rampa';details=['Širina svetlog prolaza: '+w+' m','Prolazaka u najopterećenijem satu: '+(h||'nije poznato')];
+  if(h&&h>100)details.push('Visoko vršno opterećenje: obavezna stručna provera radnog ciklusa, vremena otvaranja i reda vozila.');
+  if(w>8)details.push('Prolaz širi od 8 m: razmotriti dve sinhronizovane rampe ili posebno projektovano rešenje.');
+ } else {
+  const a=Number($('area').value);
+  if(!a){alert('Unesite površinu garažnih vrata.');return;}
+  pool=garage.filter(m=>(b==='all'||m.brand===b)&&a<=m.maxArea);
+  heading='Garažna vrata';details=['Površina vrata: '+a+' m²','Tip i balans vrata moraju se proveriti pre izbora pogona.'];
+ }
+ const models=pool.length?pool.map(linkModel).join(''):'<p>Nema modela koji se može odgovorno izdvojiti samo na osnovu unetih podataka i izabranog brenda. Potrebna je ručna provera tačne konfiguracije.</p>';
+ const accessories=accessoryList(s,control,usage);
+ const summary='<div class="result-card"><span class="result-tag">Početni predizbor</span><h3>'+heading+'</h3><ul class="result-list">'+details.map(x=>'<li>'+escapeHtml(x)+'</li>').join('')+'</ul><p><strong>Brend:</strong> '+escapeHtml(b==='all'?'Svi dostupni brendovi':b)+' · <strong>Upotreba:</strong> '+escapeHtml($('usage').selectedOptions[0].text)+'</p></div>';
+ $('result-summary').innerHTML=summary;
+ $('result-models').innerHTML='<div class="result-card"><h2>Modeli za dalju proveru</h2>'+models+'</div>';
+ $('result-accessories').innerHTML='<div class="result-card"><h2>Dodatna oprema koju treba razmotriti</h2><ul class="result-list">'+accessories.map(x=>'<li>'+escapeHtml(x)+'</li>').join('')+'</ul><p>Kompatibilnost svake komponente proverava se prema upravljačkoj centrali i uputstvu izabranog modela.</p></div><div class="calc-warning"><strong>Ograničenje rezultata:</strong> '+(s==='swing'?'kod krilnih kapija masa, dužina krila, vetar i geometrija stubova mogu promeniti izbor; ':'')+(s==='barrier'?'kod rampi se radni ciklus i vršni protok moraju proveriti za izabranu dužinu kraka; ':'')+'rezultat nije potvrda nosivosti, bezbednosti ili kompatibilnosti. Perić Sistemi potvrđuje konačnu konfiguraciju pre ponude.</div>';
+ lastMessage='Poštovanje, koristio/la sam kalkulator opreme na sajtu Perić Sistemi.\nSistem: '+heading+'\n'+details.join('\n')+'\nBrend: '+(b==='all'?'Svi':b)+'\nIntenzitet: '+$('usage').selectedOptions[0].text+'\nPredloženi modeli: '+(pool.map(m=>m.brand+' '+m.name).join(', ')||'Potrebna ručna procena')+'\nDodatna oprema: '+accessories.join('; ')+'\nLokacija: '+loc+'\nNapomena: '+$('notes').value+'\nMolim vas da proverite izbor i pošaljete ponudu. Fotografije mogu poslati u ovom razgovoru.';
+ result.classList.add('show');result.scrollIntoView({behavior:'smooth',block:'start'});
+});
+$('send-whatsapp').addEventListener('click',function(){if(!lastMessage)return;window.open('https://wa.me/381655764215?text='+encodeURIComponent(lastMessage),'_blank','noopener,noreferrer');});
+form.addEventListener('reset',function(){result.classList.remove('show');lastMessage='';setTimeout(configure,0);});
+})();
+</script>
+</body></html>
