@@ -5,6 +5,9 @@
 ## Glavni sajt
 - https://pericsistemi.rs/
 
+## Video radovi
+- Video primeri stvarnih ugradnji i pametnog upravljanja: https://pericsistemi.rs/video-radovi.html
+
 ## Usluge
 - Ugradnja motora za kapije: https://pericsistemi.rs/ugradnja-motora-za-kapije.html
 - Ugradnja motora za garažna vrata – Nice Spido i Spider: https://pericsistemi.rs/motori-za-garazna-vrata.html
