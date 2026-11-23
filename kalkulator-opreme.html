@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 .calc-wrap{max-width:1050px;margin:auto}.calc-intro{max-width:850px}.calc-panel{background:#151d28;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:clamp(18px,3vw,30px);margin:24px 0;color:#f4f6f8}
-.calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.calc-field{display:flex;flex-direction:column;gap:7px}.calc-field.full{grid-column:1/-1}
+.calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.calc-field{display:flex;flex-direction:column;gap:7px}.calc-field[hidden]{display:none!important}.calc-field.full{grid-column:1/-1}
 .calc-field label{font-weight:650;color:#fff}.calc-field small{color:#c5ced8;font-size:.82rem;line-height:1.45}
 .calc-field input,.calc-field select{width:100%;min-height:48px;padding:12px 13px;border-radius:9px;border:1px solid #596273;background:#0d1117;color:#fff;font:inherit}
 .calc-field input:focus,.calc-field select:focus{outline:3px solid rgba(255,122,0,.3);border-color:#ff8a1c}
@@ -153,10 +153,10 @@ function accessoryList(s,control,usage){
 form.addEventListener('submit',function(e){
  e.preventDefault();
  const s=$('system').value,b=$('brand').value,usage=$('usage').value,control=$('control').value,loc=$('location').value.trim();
- let pool=[],valid=true,details=[],heading='';
+ let pool=[],details=[],heading='';
  if(s==='sliding'){
   const w=Number($('width').value),kg=Number($('weight').value);
-  if(!w||!kg){valid=false;alert('Za početni izbor klizne kapije unesite dužinu i približnu masu. Ako masa nije poznata, pošaljite fotografije za ručnu procenu.');return;}
+  if(!w||!kg){alert('Za početni izbor klizne kapije unesite dužinu i približnu masu. Ako masa nije poznata, pošaljite fotografije za ručnu procenu.');return;}
   pool=sliding.filter(m=>(b==='all'||m.brand===b)&&kg<=m.max&&(!m.len||w<=m.len));
   heading='Klizna kapija';details=['Dužina kapije: '+w+' m','Približna masa: '+kg+' kg'];
   if(usage==='high'||usage==='veryhigh')details.push('Povišen intenzitet rada: treba proveriti tačnu verziju pogona i dozvoljeni radni ciklus, a ne samo maksimalnu masu.');
@@ -181,7 +181,7 @@ form.addEventListener('submit',function(e){
   const doorType=$('garage-type').value;pool=garage.filter(m=>(b==='all'||m.brand===b)&&a<=m[doorType]);
   heading='Garažna vrata';details=['Površina vrata: '+a+' m²','Tip vrata: '+($('garage-type').value==='sectional'?'segmentna':'podizna'),'Tip, balans, visina i geometrija vrata moraju se proveriti pre izbora pogona.'];
  }
- const models=pool.length?pool.map(linkModel).join(''):'<p>Nema modela koji se može odgovorno izdvojiti samo na osnovu unetih podataka i izabranog brenda. Potrebna je ručna provera tačne konfiguracije.</p>';
+ details.push('Procenjeni dnevni ciklusi: '+$('daily').selectedOptions[0].text);\n const models=pool.length?pool.map(linkModel).join(''):'<p>Nema modela koji se može odgovorno izdvojiti samo na osnovu unetih podataka i izabranog brenda. Potrebna je ručna provera tačne konfiguracije.</p>';
  const accessories=accessoryList(s,control,usage);
  const summary='<div class="result-card"><span class="result-tag">Početni predizbor</span><h3>'+heading+'</h3><ul class="result-list">'+details.map(x=>'<li>'+escapeHtml(x)+'</li>').join('')+'</ul><p><strong>Brend:</strong> '+escapeHtml(b==='all'?'Svi dostupni brendovi':b)+' · <strong>Upotreba:</strong> '+escapeHtml($('usage').selectedOptions[0].text)+'</p></div>';
  $('result-summary').innerHTML=summary;
