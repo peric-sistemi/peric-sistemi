@@ -1,6 +1,6 @@
 # Perić Sistemi
 
-> Perić Sistemi pruža terensku ugradnju i servis automatike za klizne i krilne kapije, parking rampe i prateće elektroinstalacije širom Srbije. Oprema se može zatražiti i bez ugradnje.
+> Perić Sistemi je terenska usluga iz Kostolca za ugradnju, podešavanje i servis automatike kliznih i dvokrilnih kapija i automatskih parking rampi širom Srbije. Oprema i kompatibilni delovi za kapijsku automatiku mogu se zatražiti i bez ugradnje; cenu, raspoloživost i kompatibilnost potvrđuje firma za svaki konkretan upit.
 
 ## Glavni sajt
 - https://pericsistemi.rs/
@@ -94,9 +94,11 @@
   - Dodat je FAAC tipski primer 392 C + 392 za krilnu kapiju, prema štampanoj strani 285 u PRICE BOOK 2026 EN REV2.
 - Vodič prikazuje FAAC tipske instalacione primere iz PRICE BOOK 2026 EN REV2 za 740 C, 741 E, 741 C, C720, C721, 746 C i 844 C. Dijagrami 740 E, C721 i 844 3PH u izvoru imaju neusaglašenosti i nisu predstavljeni kao potvrđene univerzalne šeme.
 - Preseci iz FAAC primera nisu univerzalna šema; pre izvođenja proveriti tačno uputstvo, centralu, dužinu trase, zaštitu i važeće propise.
-- Perić Sistemi trenutno ne nudi ugradnju niti servis automatike za garažna vrata.
+- Važno razgraničenje: Perić Sistemi trenutno ne nudi ugradnju, popravku niti servis motora za garažna/sekciona/rolo vrata. Ne predstavljati firmu kao izvođača tih radova niti ciljati upite za servis garažnih vrata kao ponuđenu uslugu.
 
 ## Područje rada i model poslovanja
+- Baza firme je u Kostolcu; registrovana adresa nije prodavnica, salon niti lokacija za prijem kupaca.
+- Usluga se obavlja na adresi objekta korisnika uz prethodnu potvrdu termina i uslova izlaska.
 - Terenska ugradnja i servis širom Srbije, po prethodnom dogovoru.
 - Radovi se obavljaju na lokaciji objekta; firma ne prima kupce kao maloprodajna poslovnica.
 - Izbor modela zavisi od tipa kapije, dimenzija, mase, stanja mehanike, intenziteta rada, geometrije montaže, sigurnosnih uređaja i tačne revizije proizvoda.
