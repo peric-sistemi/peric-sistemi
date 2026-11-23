@@ -83,13 +83,15 @@
 <option>Dvokrilna kapija</option>
 <option>Jednokrilna kapija</option>
 <option>Automatska parking rampa</option>
+<option>Garažna vrata – ugradnja motora</option>
+<option>Elektroinstalacije za automatiku</option>
 
 <option>Postojeća automatika – servis ili popravka</option>
 <option>Kupovina opreme bez ugradnje</option>
 </select>
 </div>
 <div class="estimate-field">
-<label for="estimate-width">Širina / dužina kapije (m)</label>
+<label for="estimate-width">Širina otvora / prolaza (m)</label>
 <input id="estimate-width" name="width" type="number" min="0" max="100" step="0.1" placeholder="Npr. 4.2">
 </div>
 <div class="estimate-field">
@@ -115,7 +117,7 @@
 </div>
 <div class="estimate-field full">
 <label for="estimate-details">Dodatni opis (opciono)</label>
-<textarea id="estimate-details" name="details" maxlength="700" placeholder="Npr. postojeći motor, problem u radu, željeni brend, stanje šine ili napajanja."></textarea>
+<textarea id="estimate-details" name="details" maxlength="700" placeholder="Npr. tip garažnih vrata, postojeći motor, željeni brend, stanje instalacije ili opis radova."></textarea>
 </div>
 <button type="submit">Pripremi WhatsApp upit</button>
 <p class="estimate-status" id="estimate-status" role="status" aria-live="polite"></p>
@@ -158,7 +160,7 @@ document.getElementById("estimate-form").addEventListener("submit", function(eve
   event.preventDefault();
   const value = (id) => document.getElementById(id).value.trim();
   const lines = [
-    "Poštovanje, želim početnu procenu i ponudu za automatiku.",
+    "Poštovanje, želim početnu procenu i ponudu za automatiku ili elektroinstalacije.",
     "Tip sistema: " + value("estimate-type"),
     "Širina/dužina: " + (value("estimate-width") ? value("estimate-width") + " m" : "Nije poznato"),
     "Približna masa: " + (value("estimate-weight") ? value("estimate-weight") + " kg" : "Nije poznato"),
