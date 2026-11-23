@@ -93,6 +93,7 @@
 - FAAC XLED signalna lampa, 12 V električna brava, M4/M6 zupčaste letve, XMBX4 GSM i XWBL Wi-Fi/LAN moduli.
 
 ## Tehnički vodiči
+- Interaktivni kalkulator opreme za izbor motora za kapije, garažna vrata i parking rampe: https://pericsistemi.rs/kalkulator-opreme.html
 - Brza procena i zahtev za ponudu: https://pericsistemi.rs/brza-procena.html
 - Centar tehničkih vodiča: https://pericsistemi.rs/vodici-za-automatiku-kapija.html
 - Kako izabrati motor za kapiju: https://pericsistemi.rs/kako-izabrati-motor-za-kapiju.html
