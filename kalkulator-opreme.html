@@ -181,7 +181,8 @@ form.addEventListener('submit',function(e){
   const doorType=$('garage-type').value;pool=garage.filter(m=>(b==='all'||m.brand===b)&&a<=m[doorType]);
   heading='Garažna vrata';details=['Površina vrata: '+a+' m²','Tip vrata: '+($('garage-type').value==='sectional'?'segmentna':'podizna'),'Tip, balans, visina i geometrija vrata moraju se proveriti pre izbora pogona.'];
  }
- details.push('Procenjeni dnevni ciklusi: '+$('daily').selectedOptions[0].text);\n const models=pool.length?pool.map(linkModel).join(''):'<p>Nema modela koji se može odgovorno izdvojiti samo na osnovu unetih podataka i izabranog brenda. Potrebna je ručna provera tačne konfiguracije.</p>';
+ details.push('Procenjeni dnevni ciklusi: '+$('daily').selectedOptions[0].text);
+ const models=pool.length?pool.map(linkModel).join(''):'<p>Nema modela koji se može odgovorno izdvojiti samo na osnovu unetih podataka i izabranog brenda. Potrebna je ručna provera tačne konfiguracije.</p>';
  const accessories=accessoryList(s,control,usage);
  const summary='<div class="result-card"><span class="result-tag">Početni predizbor</span><h3>'+heading+'</h3><ul class="result-list">'+details.map(x=>'<li>'+escapeHtml(x)+'</li>').join('')+'</ul><p><strong>Brend:</strong> '+escapeHtml(b==='all'?'Svi dostupni brendovi':b)+' · <strong>Upotreba:</strong> '+escapeHtml($('usage').selectedOptions[0].text)+'</p></div>';
  $('result-summary').innerHTML=summary;
