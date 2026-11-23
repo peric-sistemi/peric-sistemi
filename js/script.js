@@ -34,6 +34,39 @@
       item.appendChild(link);
       list.appendChild(item);
     }
+
+    // Keep the video portfolio alongside the photo gallery in the global menu.
+    if (list && !list.querySelector('a[href="/video-radovi.html"]')) {
+      const galleryLink = list.querySelector('a[href="/galerija.html"], a[href="galerija.html"]');
+      if (galleryLink) {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = "/video-radovi.html";
+        link.textContent = "Video radovi";
+        galleryLink.closest("li").after(item);
+        item.appendChild(link);
+      }
+    }
+  }
+
+  // Mirror the video portfolio link in the footer wherever the photo gallery is listed.
+  const footer = document.querySelector("footer");
+  if (footer && !footer.querySelector('a[href="/video-radovi.html"], a[href="video-radovi.html"]')) {
+    const galleryFooterLink = footer.querySelector('a[href="/galerija.html"], a[href="galerija.html"]');
+    if (galleryFooterLink) {
+      const item = document.createElement("p");
+      const link = document.createElement("a");
+      link.href = "/video-radovi.html";
+      link.textContent = "Video radovi";
+      item.appendChild(link);
+      galleryFooterLink.closest("p")?.after(item);
+    }
+  }
+
+  // Expose the current video page to assistive technology and active-state styling.
+  if (window.location.pathname.replace(/\\/$/, "") === "/video-radovi.html") {
+    const videoLink = document.querySelector('#main-nav a[href="/video-radovi.html"]');
+    if (videoLink) videoLink.setAttribute("aria-current", "page");
   }
   if (navToggle && mainNav) {
     navToggle.addEventListener("click", () => {
