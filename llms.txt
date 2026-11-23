@@ -76,6 +76,10 @@
 - Key Automation: https://pericsistemi.rs/key-automation.html
 - Key SUN i TURBO S: https://pericsistemi.rs/key-sun-turbo-s.html
 
+## Rezervni delovi i dodatna oprema
+- Upiti za rezervne delove za automatiku kliznih i krilnih kapija: https://pericsistemi.rs/rezervni-delovi-za-motore-za-kapije.html
+- Kompatibilnost se proverava prema proizvođaču, tačnom modelu, reviziji centrale, frekvenciji i oznaci komponente; cena i dostupnost potvrđuju se za svaki konkretan upit.
+
 ## Dodatna oprema i proizvodi
 - FAAC XP 20 D, XP 20B D LC i XP 20W D fotoćelije.
 - FAAC XT2/XT4 FDS i FDS BD daljinski upravljači; RP/RP2 i XR2N/XR4N radio-prijemnici.
