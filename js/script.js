@@ -64,7 +64,7 @@
   }
 
   // Expose the current video page to assistive technology and active-state styling.
-  if (window.location.pathname.replace(/\\/$/, "") === "/video-radovi.html") {
+  if (window.location.pathname === "/video-radovi.html") {
     const videoLink = document.querySelector('#main-nav a[href="/video-radovi.html"]');
     if (videoLink) videoLink.setAttribute("aria-current", "page");
   }
